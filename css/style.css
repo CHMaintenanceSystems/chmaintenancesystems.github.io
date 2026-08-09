@@ -1,172 +1,733 @@
-<section class="section section-dark">
+/* =====================================================
+   CH MAINTENANCE SYSTEMS
+   VERSION 2.0
+   ===================================================== */
 
-    <div class="container">
 
-        <h2 class="section-title">
-            Engineering. Innovation. Reliability.
-        </h2>
+/* =====================================================
+   1. VARIABLES
+   ===================================================== */
 
-        <p class="section-subtitle">
-            CH Maintenance Systems combines practical engineering expertise with modern maintenance systems to help manufacturers reduce downtime, increase reliability and improve operational performance.
-        </p>
+:root {
 
-    </div>
+    /* Core */
+    --background: #071827;
+    --surface: #0D2238;
+    --surface-alt: #142F4A;
 
-</section>
+    /* Brand */
+    --primary: #0B5CAD;
+    --primary-hover: #1672CC;
+    --primary-light: #1672CC;
 
+    /* Text */
+    --text: #FFFFFF;
+    --text-light: #D9E2EC;
+    --text-muted: #9FB0C1;
 
-<section class="section section-light">
+    /* Light sections */
+    --background-light: #F4F6F8;
 
-    <div class="container">
+    /* General */
+    --white: #FFFFFF;
 
-        <h2 class="section-title">
-            What We Do
-        </h2>
+    /* Borders */
+    --border: rgba(255,255,255,0.10);
 
-        <p class="section-subtitle">
-            We combine engineering expertise with modern technology to keep production running efficiently.
-        </p>
+    /* Effects */
+    --shadow: 0 15px 40px rgba(0,0,0,0.25);
+    --radius: 12px;
+    --transition: 0.3s ease;
 
-        <div class="grid grid-3">
+    /* Spacing */
+    --space-sm: 20px;
+    --space-md: 40px;
+    --space-lg: 80px;
+}
 
-            <div class="feature-card">
 
-                <div class="feature-icon"></div>
+/* =====================================================
+   2. RESET
+   ===================================================== */
 
-                <h3>Electrical Engineering</h3>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-                <p>
-                    Fault finding, PLC support, control systems, drives and electrical diagnostics.
-                </p>
 
-            </div>
+/* =====================================================
+   3. BODY
+   ===================================================== */
 
+body {
 
-            <div class="feature-card">
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
 
-                <div class="feature-icon"></div>
+    background: var(--background);
 
-                <h3>Mechanical Engineering</h3>
+    color: var(--text);
 
-                <p>
-                    Mechanical repairs, machine optimisation and long-term reliability improvements.
-                </p>
+    line-height: 1.6;
 
-            </div>
+}
 
 
-            <div class="feature-card">
+/* =====================================================
+   4. LAYOUT
+   ===================================================== */
 
-                <div class="feature-icon"></div>
+.container {
 
-                <h3>Engineering Software</h3>
+    width: min(1200px, 90%);
 
-                <p>
-                    Bespoke maintenance software, digital inspections, QR systems and intelligent reporting.
-                </p>
+    margin: auto;
 
-            </div>
+}
 
-        </div>
 
-    </div>
+.section {
 
-</section>
+    padding: 100px 0;
 
+}
 
-<section class="section section-dark">
 
-    <div class="container">
+.section-dark {
 
-        <h2 class="section-title">
-            Our Process
-        </h2>
+    background: var(--background);
 
-        <p class="section-subtitle">
-            Every engineering challenge follows the same structured approach.
-        </p>
+    color: var(--text);
 
-        <div class="grid grid-4">
+}
 
-            <div class="feature-card">
 
-                <div class="feature-icon">🔍</div>
+.section-light {
 
-                <h3>Investigate</h3>
+    background: var(--background-light);
 
-                <p>
-                    Understand the issue and gather evidence.
-                </p>
+    color: #071827;
 
-            </div>
+}
 
 
-            <div class="feature-card">
+/* =====================================================
+   5. GRID
+   ===================================================== */
 
-                <div class="feature-icon">📊</div>
+.grid {
 
-                <h3>Analyse</h3>
+    display: grid;
 
-                <p>
-                    Identify root causes instead of treating symptoms.
-                </p>
+    gap: 30px;
 
-            </div>
+}
 
 
-            <div class="feature-card">
+.grid-2 {
 
-                <div class="feature-icon">🛠️</div>
+    grid-template-columns: repeat(2, 1fr);
 
-                <h3>Improve</h3>
+}
 
-                <p>
-                    Implement practical engineering solutions.
-                </p>
 
-            </div>
+.grid-3 {
 
+    grid-template-columns: repeat(3, 1fr);
 
-            <div class="feature-card">
+}
 
-                <div class="feature-icon">📈</div>
 
-                <h3>Support</h3>
+.grid-4 {
 
-                <p>
-                    Continue improving reliability over time.
-                </p>
+    grid-template-columns: repeat(4, 1fr);
 
-            </div>
+}
 
-        </div>
 
-    </div>
+/* =====================================================
+   6. NAVIGATION
+   ===================================================== */
 
-</section>
+nav {
 
+    position: fixed;
 
-<section class="section section-light">
+    top: 0;
+    left: 0;
 
-    <div class="container">
+    width: 100%;
 
-        <div class="cta">
+    display: flex;
 
-            <h2>
-                Ready to Improve Reliability?
-            </h2>
+    justify-content: space-between;
 
-            <p>
-                Whether you need engineering support, maintenance systems or custom software, we're here to help.
-            </p>
+    align-items: center;
 
-            <a href="contact.html" class="btn">
-                Book a Consultation
-            </a>
+    padding: 20px 60px;
 
-        </div>
+    background: rgba(7,24,39,0.95);
 
-    </div>
+    backdrop-filter: blur(15px);
 
-</section>
+    z-index: 1000;
+
+}
+
+
+.logo img {
+
+    height: 70px;
+
+    width: auto;
+
+}
+
+
+nav ul {
+
+    display: flex;
+
+    gap: 40px;
+
+    list-style: none;
+
+}
+
+
+nav a {
+
+    color: var(--white);
+
+    text-decoration: none;
+
+    font-weight: 600;
+
+    transition: var(--transition);
+
+}
+
+
+nav a:hover {
+
+    color: var(--primary-light);
+
+}
+
+
+/* =====================================================
+   7. HERO
+   ===================================================== */
+
+.hero {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    padding: 140px 20px 80px;
+
+    background:
+        linear-gradient(
+            180deg,
+            var(--background),
+            var(--surface)
+        );
+
+}
+
+
+.hero-content {
+
+    max-width: 900px;
+
+}
+
+
+.hero h1 {
+
+    font-size: 4rem;
+
+    font-weight: 800;
+
+    line-height: 1.1;
+
+    margin-bottom: 30px;
+
+}
+
+
+.hero p {
+
+    font-size: 1.3rem;
+
+    line-height: 1.8;
+
+    color: var(--text-light);
+
+    margin-bottom: 40px;
+
+}
+
+
+/* =====================================================
+   8. BUTTONS
+   ===================================================== */
+
+.buttons {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+
+}
+
+
+.btn {
+
+    display: inline-block;
+
+    padding: 16px 36px;
+
+    background: var(--primary);
+
+    color: var(--white);
+
+    text-decoration: none;
+
+    border-radius: 8px;
+
+    font-weight: 700;
+
+    transition: var(--transition);
+
+}
+
+
+.btn:hover {
+
+    transform: translateY(-3px);
+
+    background: var(--primary-hover);
+
+}
+
+
+.btn-outline {
+
+    display: inline-block;
+
+    padding: 14px 34px;
+
+    border: 2px solid var(--primary);
+
+    border-radius: 8px;
+
+    color: var(--white);
+
+    text-decoration: none;
+
+    font-weight: 700;
+
+    transition: var(--transition);
+
+}
+
+
+.btn-outline:hover {
+
+    background: var(--primary);
+
+}
+
+
+/* =====================================================
+   9. SECTION TITLES
+   ===================================================== */
+
+.section-title {
+
+    font-size: 3rem;
+
+    font-weight: 700;
+
+    margin-bottom: 20px;
+
+}
+
+
+.section-subtitle {
+
+    font-size: 1.2rem;
+
+    line-height: 1.8;
+
+    max-width: 800px;
+
+    margin-bottom: 60px;
+
+}
+
+
+/* Dark section text */
+
+.section-dark .section-title {
+
+    color: var(--white);
+
+}
+
+
+.section-dark .section-subtitle {
+
+    color: var(--text-light);
+
+}
+
+
+/* Light section text */
+
+.section-light .section-title {
+
+    color: #071827;
+
+}
+
+
+.section-light .section-subtitle {
+
+    color: #4B5B6B;
+
+}
+
+
+/* =====================================================
+   10. FEATURE CARDS
+   ===================================================== */
+
+.feature-card {
+
+    padding: 40px;
+
+    border-radius: var(--radius);
+
+    transition: var(--transition);
+
+}
+
+
+/* Dark cards */
+
+.section-dark .feature-card {
+
+    background: rgba(255,255,255,0.04);
+
+    border: 1px solid rgba(255,255,255,0.08);
+
+    color: var(--white);
+
+    box-shadow: var(--shadow);
+
+}
+
+
+/* Light cards */
+
+.section-light .feature-card {
+
+    background: var(--white);
+
+    border: 1px solid #D9E1E8;
+
+    color: #071827;
+
+    box-shadow: 0 10px 30px rgba(7,24,39,0.08);
+
+}
+
+
+/* Card hover */
+
+.feature-card:hover {
+
+    transform: translateY(-8px);
+
+}
+
+
+.section-dark .feature-card:hover {
+
+    border-color: var(--primary);
+
+}
+
+
+.section-light .feature-card:hover {
+
+    border-color: var(--primary);
+
+}
+
+
+/* =====================================================
+   11. FEATURE CARD HEADINGS
+   ===================================================== */
+
+.feature-card h3 {
+
+    position: relative;
+
+    padding-top: 18px;
+
+    margin-bottom: 20px;
+
+    font-size: 1.4rem;
+
+}
+
+
+/* Professional accent line */
+
+.feature-card h3::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    width: 40px;
+
+    height: 3px;
+
+    background: var(--primary);
+
+    border-radius: 2px;
+
+}
+
+
+/* =====================================================
+   12. FEATURE CARD TEXT
+   ===================================================== */
+
+.section-dark .feature-card p {
+
+    color: var(--text-light);
+
+    line-height: 1.8;
+
+}
+
+
+.section-light .feature-card p {
+
+    color: #4B5B6B;
+
+    line-height: 1.8;
+
+}
+
+
+/* =====================================================
+   13. PROCESS NUMBERS
+   ===================================================== */
+
+.process-number {
+
+    font-size: 2rem;
+
+    font-weight: 800;
+
+    color: var(--primary);
+
+    margin-bottom: 10px;
+
+    letter-spacing: 2px;
+
+}
+
+
+/* =====================================================
+   14. CTA
+   ===================================================== */
+
+.cta {
+
+    background: var(--primary);
+
+    padding: 80px;
+
+    border-radius: var(--radius);
+
+    text-align: center;
+
+    box-shadow: var(--shadow);
+
+}
+
+
+.cta h2 {
+
+    font-size: 2.5rem;
+
+    margin-bottom: 20px;
+
+    color: var(--white);
+
+}
+
+
+.cta p {
+
+    max-width: 700px;
+
+    margin: 0 auto 35px;
+
+    line-height: 1.8;
+
+    color: var(--white);
+
+}
+
+
+/* =====================================================
+   15. RESPONSIVE
+   ===================================================== */
+
+@media (max-width: 900px) {
+
+
+    .grid-2,
+    .grid-3,
+    .grid-4 {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    nav {
+
+        flex-direction: column;
+
+        padding: 20px;
+
+        gap: 20px;
+
+    }
+
+
+    nav ul {
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        gap: 20px;
+
+    }
+
+
+    .hero h1 {
+
+        font-size: 2.6rem;
+
+    }
+
+
+    .hero p {
+
+        font-size: 1.1rem;
+
+    }
+
+
+    .section {
+
+        padding: 70px 0;
+
+    }
+
+
+    .section-title {
+
+        font-size: 2.3rem;
+
+    }
+
+
+    .cta {
+
+        padding: 50px 25px;
+
+    }
+
+
+}
+
+
+@media (max-width: 600px) {
+
+
+    nav {
+
+        position: relative;
+
+    }
+
+
+    .logo img {
+
+        height: 55px;
+
+    }
+
+
+    .hero {
+
+        min-height: auto;
+
+        padding: 100px 20px 80px;
+
+    }
+
+
+    .hero h1 {
+
+        font-size: 2.2rem;
+
+    }
+
+
+    .buttons {
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+    }
+
+
+    .btn,
+    .btn-outline {
+
+        text-align: center;
+
+    }
+
+
 }
