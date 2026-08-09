@@ -1,547 +1,172 @@
-/* =====================================================
-   CH MAINTENANCE SYSTEMS
-   VERSION 2.0
-===================================================== */
+<section class="section section-dark">
 
-
-/* =====================================================
-   1. VARIABLES
-===================================================== */
+    <div class="container">
 
-:root {
+        <h2 class="section-title">
+            Engineering. Innovation. Reliability.
+        </h2>
 
-    /* Core */
-    --background: #071827;
-    --surface: #0D2238;
-    --surface-alt: #142F4A;
+        <p class="section-subtitle">
+            CH Maintenance Systems combines practical engineering expertise with modern maintenance systems to help manufacturers reduce downtime, increase reliability and improve operational performance.
+        </p>
 
-    /* Brand */
-    --primary: #0B5CAD;
-    --primary-hover: #1672CC;
+    </div>
 
-    /* Text */
-    --text: #FFFFFF;
-    --text-light: #D9E2EC;
-    --text-muted: #9FB0C1;
+</section>
 
-    /* Light sections */
-    --background-light: #F4F6F8;
 
-    /* Borders */
-    --border: rgba(255,255,255,0.10);
+<section class="section section-light">
 
-    /* Effects */
-    --shadow: 0 15px 40px rgba(0,0,0,0.25);
-    --radius: 12px;
-    --transition: .3s ease;
+    <div class="container">
 
-    /* Spacing */
-    --space-sm: 20px;
-    --space-md: 40px;
-    --space-lg: 80px;
-}
+        <h2 class="section-title">
+            What We Do
+        </h2>
 
-.section-light {
-    background: var(--background-light);
-    color: #071827;
-}
+        <p class="section-subtitle">
+            We combine engineering expertise with modern technology to keep production running efficiently.
+        </p>
 
-.section-light .section-title {
-    color: #071827;
-}
+        <div class="grid grid-3">
 
-.section-light .section-subtitle {
-    color: #4B5B6B;
-}
+            <div class="feature-card">
 
-.section-light .feature-card {
-    background: #FFFFFF;
-    border: 1px solid #D9E1E8;
-    color: #071827;
-    box-shadow: 0 10px 30px rgba(7, 24, 39, 0.08);
-}
+                <div class="feature-icon">⚡</div>
 
-.section-light .feature-card h3 {
-    color: #071827;
-}
+                <h3>Electrical Engineering</h3>
 
-.section-light .feature-card p {
-    color: #4B5B6B;
-}
+                <p>
+                    Fault finding, PLC support, control systems, drives and electrical diagnostics.
+                </p>
 
-.section-light .feature-icon {
-    color: var(--primary);
-}
+            </div>
 
-/* =====================================================
-   2. RESET
-===================================================== */
 
-*{
+            <div class="feature-card">
 
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+                <div class="feature-icon">⚙️</div>
 
-}
+                <h3>Mechanical Engineering</h3>
 
+                <p>
+                    Mechanical repairs, machine optimisation and long-term reliability improvements.
+                </p>
 
-/* =====================================================
-   3. BODY
-===================================================== */
+            </div>
 
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background: var(--light);
-    color: var(--text);
-    line-height: 1.6;
-}
 
+            <div class="feature-card">
 
-/* =====================================================
-   4. LAYOUT
-===================================================== */
+                <div class="feature-icon">💻</div>
 
-.container{
+                <h3>Engineering Software</h3>
 
-    width:min(1200px,90%);
-    margin:auto;
+                <p>
+                    Bespoke maintenance software, digital inspections, QR systems and intelligent reporting.
+                </p>
 
-}
+            </div>
 
-.section{
+        </div>
 
-    padding:100px 0;
+    </div>
 
-}
+</section>
 
-.section-dark{
 
-    background:var(--background);
+<section class="section section-dark">
 
-}
+    <div class="container">
 
-.section-light{
+        <h2 class="section-title">
+            Our Process
+        </h2>
 
-    background:var(--background-light);
+        <p class="section-subtitle">
+            Every engineering challenge follows the same structured approach.
+        </p>
 
-}
+        <div class="grid grid-4">
 
+            <div class="feature-card">
 
-/* =====================================================
-   5. GRID
-===================================================== */
+                <div class="feature-icon">🔍</div>
 
-.grid{
+                <h3>Investigate</h3>
 
-    display:grid;
-    gap:30px;
+                <p>
+                    Understand the issue and gather evidence.
+                </p>
 
-}
+            </div>
 
-.grid-2{
 
-    grid-template-columns:repeat(2,1fr);
+            <div class="feature-card">
 
-}
+                <div class="feature-icon">📊</div>
 
-.grid-3{
+                <h3>Analyse</h3>
 
-    grid-template-columns:repeat(3,1fr);
+                <p>
+                    Identify root causes instead of treating symptoms.
+                </p>
 
-}
+            </div>
 
-.grid-4{
 
-    grid-template-columns:repeat(4,1fr);
+            <div class="feature-card">
 
-}
+                <div class="feature-icon">🛠️</div>
 
+                <h3>Improve</h3>
 
-/* =====================================================
-   6. NAVIGATION
-===================================================== */
+                <p>
+                    Implement practical engineering solutions.
+                </p>
 
-nav{
+            </div>
 
-    position:fixed;
-    top:0;
-    left:0;
-    width:100%;
 
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
+            <div class="feature-card">
 
-    padding:20px 60px;
+                <div class="feature-icon">📈</div>
 
-    background:rgba(7,24,39,.95);
+                <h3>Support</h3>
 
-    backdrop-filter:blur(15px);
+                <p>
+                    Continue improving reliability over time.
+                </p>
 
-    z-index:1000;
+            </div>
 
-}
+        </div>
 
-.logo img{
+    </div>
 
-    height:70px;
+</section>
 
-}
 
-nav ul{
+<section class="section section-light">
 
-    display:flex;
-    gap:40px;
-    list-style:none;
+    <div class="container">
 
-}
+        <div class="cta">
 
-nav a{
+            <h2>
+                Ready to Improve Reliability?
+            </h2>
 
-    color:white;
-    text-decoration:none;
-    font-weight:600;
-    transition:var(--transition);
+            <p>
+                Whether you need engineering support, maintenance systems or custom software, we're here to help.
+            </p>
 
-}
+            <a href="contact.html" class="btn">
+                Book a Consultation
+            </a>
 
-nav a:hover{
+        </div>
 
-    color:var(--primary-light);
+    </div>
 
-}
-
-
-/* =====================================================
-   7. HERO
-===================================================== */
-
-.hero{
-
-    height:100vh;
-
-    display:flex;
-    justify-content:center;
-    align-items:center;
-
-    text-align:center;
-
-    padding:0 20px;
-
-    background:linear-gradient(
-        180deg,
-        var(--background),
-        var(--background-light)
-    );
-
-}
-
-.hero-content{
-
-    max-width:900px;
-
-}
-
-.hero h1{
-
-    font-size:4rem;
-    font-weight:800;
-    line-height:1.1;
-    margin-bottom:30px;
-
-}
-
-.hero p{
-
-    font-size:1.3rem;
-    line-height:1.8;
-    color:var(--text-light);
-    margin-bottom:40px;
-
-}
-
-
-/* =====================================================
-   8. BUTTONS
-===================================================== */
-
-.buttons{
-
-    display:flex;
-    justify-content:center;
-    gap:20px;
-    flex-wrap:wrap;
-
-}
-
-.btn{
-
-    padding:18px 40px;
-    background:var(--primary);
-    color:white;
-
-    text-decoration:none;
-
-    border-radius:8px;
-
-    font-weight:700;
-
-    transition:var(--transition);
-
-}
-
-.btn:hover{
-
-    transform:translateY(-4px);
-
-    background:var(--primary-light);
-
-}
-
-.btn-outline{
-
-    padding:18px 40px;
-
-    border:2px solid var(--primary);
-
-    border-radius:8px;
-
-    color:white;
-
-    text-decoration:none;
-
-    font-weight:700;
-
-    transition:var(--transition);
-
-}
-
-.btn-outline:hover{
-
-    background:var(--primary);
-
-}
-
-
-/* =====================================================
-   9. CARDS
-===================================================== */
-
-.card{
-
-    background:rgba(255,255,255,.04);
-
-    border:1px solid rgba(255,255,255,.08);
-
-    border-radius:var(--radius);
-
-    padding:40px;
-
-    backdrop-filter:blur(10px);
-
-    box-shadow:var(--shadow);
-
-    transition:var(--transition);
-
-}
-
-.card:hover{
-
-    transform:translateY(-8px);
-
-    border-color:var(--primary);
-
-}
-
-
-/* =====================================================
-   10. FEATURE CARDS
-===================================================== */
-
-.feature-card{
-
-    background:rgba(255,255,255,.04);
-
-    border:1px solid rgba(255,255,255,.08);
-
-    border-radius:var(--radius);
-
-    padding:40px;
-
-    text-align:center;
-
-    transition:var(--transition);
-
-    backdrop-filter:blur(12px);
-
-    box-shadow:var(--shadow);
-
-}
-
-.feature-card:hover{
-
-    transform:translateY(-10px);
-
-    border-color:var(--primary);
-
-}
-
-.feature-icon{
-
-    font-size:3rem;
-
-    margin-bottom:20px;
-
-}
-
-.feature-card h3{
-
-    margin-bottom:20px;
-
-    font-size:1.5rem;
-
-}
-
-.feature-card p{
-
-    color:var(--text-light);
-
-    line-height:1.8;
-
-}
-
-
-/* =====================================================
-   11. PAGE TITLES
-===================================================== */
-
-.section-title{
-
-    font-size:3rem;
-
-    margin-bottom:20px;
-
-}
-
-.section-subtitle{
-
-    font-size:1.2rem;
-
-    color:var(--text-light);
-
-    line-height:1.8;
-
-    max-width:800px;
-
-    margin-bottom:60px;
-
-}
-
-
-/* =====================================================
-   12. CTA
-===================================================== */
-
-.cta{
-
-    background:var(--primary);
-
-    padding:80px;
-
-    border-radius:var(--radius);
-
-    text-align:center;
-
-}
-
-.cta p {
-    max-width: 700px;
-    margin: 20px auto 30px;
-    line-height: 1.8;
-    color: var(--text-light);
-}
-
-.cta .btn {
-    display: inline-block;
-    margin-top: 10px;
-}
-
-/* =====================================================
-   13. INTRO
-===================================================== */
-
-.intro{
-
-    max-width:1100px;
-
-    margin:auto;
-
-    padding:120px 40px;
-
-    text-align:center;
-
-}
-
-.intro h2{
-
-    font-size:3rem;
-
-    margin-bottom:30px;
-
-}
-
-.intro p{
-
-    font-size:1.2rem;
-
-    line-height:2;
-
-    color:var(--text-light);
-
-}
-
-
-/* =====================================================
-   14. RESPONSIVE
-===================================================== */
-
-@media(max-width:900px){
-
-    .grid-2,
-    .grid-3,
-    .grid-4{
-
-        grid-template-columns:1fr;
-
-    }
-
-    nav{
-
-        flex-direction:column;
-
-        padding:20px;
-
-        gap:20px;
-
-    }
-
-    nav ul{
-
-        flex-wrap:wrap;
-
-        justify-content:center;
-
-        gap:20px;
-
-    }
-
-    .hero h1{
-
-        font-size:2.6rem;
-
-    }
-
+</section>
 }
