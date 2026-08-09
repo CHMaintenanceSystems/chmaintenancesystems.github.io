@@ -40,7 +40,32 @@
     --space-md: 40px;
     --space-lg: 80px;
 }
+.section-light {
+    background: var(--background-light);
+    color: #071827;
+}
 
+.section-light .section-title {
+    color: #071827;
+}
+
+.section-light .section-subtitle {
+    color: #4B5B6B;
+}
+
+.section-light .feature-card {
+    background: #FFFFFF;
+    color: #071827;
+    border: 1px solid #D9E1E8;
+}
+
+.section-light .feature-card h3 {
+    color: #071827;
+}
+
+.section-light .feature-card p {
+    color: #4B5B6B;
+}
 /* =====================================================
    2. RESET
 ===================================================== */
