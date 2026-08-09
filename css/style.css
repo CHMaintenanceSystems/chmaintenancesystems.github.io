@@ -32,6 +32,26 @@ box-sizing:border-box;
 }
 
 body{
+    /* ==========================
+   Layout
+========================== */
+
+.container{
+    width:min(1200px, 90%);
+    margin:0 auto;
+}
+
+.section{
+    padding:100px 0;
+}
+
+.section-dark{
+    background:var(--background);
+}
+
+.section-light{
+    background:var(--background-light);
+}
 
 font-family:'Montserrat',sans-serif;
 
