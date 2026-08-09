@@ -1,14 +1,25 @@
-CH Maintenance Systems - Brand Standards
-Brand Position
+# CH Maintenance Systems - Brand Standards
+
+## Brand Position
+
 Modern engineering consultancy focused on reliability, maintenance systems and industrial technology.
 
-Mission
+---
+
+## Mission
+
 Improve industrial reliability through practical engineering expertise and innovative maintenance solutions.
 
-Vision
+---
+
+## Vision
+
 To become one of the UK's leading engineering and reliability partners by combining consultancy with intelligent maintenance technology.
 
-Brand Personality
+---
+
+## Brand Personality
+
 Professional
 
 Modern
@@ -21,18 +32,29 @@ Reliable
 
 Forward-thinking
 
-Colour Palette
-Primary Blue #0B4EA2
+---
 
-Navy Background #071827
+## Colour Palette
 
-Steel Grey #7C8895
+Primary Blue
+#0B4EA2
 
-White #FFFFFF
+Navy Background
+#071827
 
-Light Grey #D8DEE8
+Steel Grey
+#7C8895
 
-Typography
+White
+#FFFFFF
+
+Light Grey
+#D8DEE8
+
+---
+
+## Typography
+
 Font
 
 Montserrat
@@ -51,7 +73,10 @@ Clean
 
 Easy to read
 
-Design Principles
+---
+
+## Design Principles
+
 Lots of whitespace
 
 Large headings
@@ -66,7 +91,10 @@ Professional photography
 
 Subtle animations
 
-Tone of Voice
+---
+
+## Tone of Voice
+
 Speak about solving problems.
 
 Avoid buzzwords.
