@@ -34,6 +34,13 @@
     --space-md:40px;
     --space-lg:80px;
 
+   --text:#FFFFFF;
+--text-muted:#B7C4D4;
+--text-light:#D6E0EA;
+
+--background-light:#F4F7FA;
+--primary-light:#1565C0;
+
 }
 
 /* =====================================================
