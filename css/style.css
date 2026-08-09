@@ -424,6 +424,17 @@ nav a:hover{
 
 }
 
+.cta p {
+    max-width: 700px;
+    margin: 20px auto 30px;
+    line-height: 1.8;
+    color: var(--text-light);
+}
+
+.cta .btn {
+    display: inline-block;
+    margin-top: 10px;
+}
 
 /* =====================================================
    13. INTRO
