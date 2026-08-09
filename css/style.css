@@ -1,15 +1,22 @@
+/* =====================================================
+   CH MAINTENANCE SYSTEMS
+   VERSION 2.0
+===================================================== */
+
+
+/* =====================================================
+   1. VARIABLES
+===================================================== */
+
 :root{
 
     --background:#071827;
-
     --background-light:#0F2438;
 
     --primary:#0B4EA2;
-
     --primary-light:#2B6FD6;
 
     --text:#FFFFFF;
-
     --text-light:#D8DEE8;
 
     --grey:#7C8895;
@@ -21,54 +28,71 @@
     --transition:.3s ease;
 
 }
+
+
+/* =====================================================
+   2. RESET
+===================================================== */
+
 *{
 
-margin:0;
-
-padding:0;
-
-box-sizing:border-box;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 
 }
 
+
+/* =====================================================
+   3. BODY
+===================================================== */
+
 body{
-    /* ==========================
-   Layout
-========================== */
+
+    font-family:'Montserrat',sans-serif;
+    background:var(--background);
+    color:var(--text);
+
+}
+
+
+/* =====================================================
+   4. LAYOUT
+===================================================== */
 
 .container{
-    width:min(1200px, 90%);
-    margin:0 auto;
+
+    width:min(1200px,90%);
+    margin:auto;
+
 }
 
 .section{
+
     padding:100px 0;
+
 }
 
 .section-dark{
+
     background:var(--background);
+
 }
 
 .section-light{
+
     background:var(--background-light);
-}
-
-font-family:'Montserrat',sans-serif;
-
-background:#071827;
-
-color:white;
 
 }
 
-/* ==========================
-   Grid
-========================== */
+
+/* =====================================================
+   5. GRID
+===================================================== */
 
 .grid{
 
     display:grid;
-
     gap:30px;
 
 }
@@ -91,252 +115,321 @@ color:white;
 
 }
 
-@media(max-width:900px){
 
-.grid-2,
-.grid-3,
-.grid-4{
-
-grid-template-columns:1fr;
-
-}
-
-}
+/* =====================================================
+   6. NAVIGATION
+===================================================== */
 
 nav{
 
-position:fixed;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
 
-top:0;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
 
-left:0;
+    padding:20px 60px;
 
-width:100%;
+    background:rgba(7,24,39,.95);
 
-display:flex;
+    backdrop-filter:blur(15px);
 
-justify-content:space-between;
-
-align-items:center;
-
-padding:20px 60px;
-
-background:rgba(7,24,39,.95);
-
-backdrop-filter:blur(15px);
-
-z-index:1000;
+    z-index:1000;
 
 }
 
 .logo img{
 
-height:70px;
+    height:70px;
 
 }
 
 nav ul{
 
-display:flex;
-
-gap:40px;
-
-list-style:none;
+    display:flex;
+    gap:40px;
+    list-style:none;
 
 }
 
 nav a{
 
-color:white;
-
-text-decoration:none;
-
-font-weight:600;
-
-transition:.3s;
+    color:white;
+    text-decoration:none;
+    font-weight:600;
+    transition:var(--transition);
 
 }
 
 nav a:hover{
 
-color:#3b82f6;
+    color:var(--primary-light);
 
 }
 
+
+/* =====================================================
+   7. HERO
+===================================================== */
+
 .hero{
 
-height:100vh;
+    height:100vh;
 
-display:flex;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 
-justify-content:center;
+    text-align:center;
 
-align-items:center;
+    padding:0 20px;
 
-text-align:center;
-
-padding:0 20px;
-
-background:linear-gradient(
-
-180deg,
-
-#071827,
-
-#0b2036
-
-);
+    background:linear-gradient(
+        180deg,
+        var(--background),
+        var(--background-light)
+    );
 
 }
 
 .hero-content{
 
-max-width:900px;
+    max-width:900px;
 
 }
 
 .hero h1{
 
-font-size:4rem;
-
-font-weight:800;
-
-line-height:1.1;
-
-margin-bottom:30px;
+    font-size:4rem;
+    font-weight:800;
+    line-height:1.1;
+    margin-bottom:30px;
 
 }
 
 .hero p{
 
-font-size:1.3rem;
-
-line-height:1.8;
-
-color:#cbd5e1;
-
-margin-bottom:40px;
+    font-size:1.3rem;
+    line-height:1.8;
+    color:var(--text-light);
+    margin-bottom:40px;
 
 }
 
+
+/* =====================================================
+   8. BUTTONS
+===================================================== */
+
 .buttons{
 
-display:flex;
-
-justify-content:center;
-
-gap:20px;
-
-flex-wrap:wrap;
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
 
 }
 
 .btn{
 
-padding:18px 40px;
+    padding:18px 40px;
+    background:var(--primary);
+    color:white;
 
-background:#0B4EA2;
+    text-decoration:none;
 
-color:white;
+    border-radius:8px;
 
-text-decoration:none;
+    font-weight:700;
 
-border-radius:8px;
-
-font-weight:700;
-
-transition:.3s;
+    transition:var(--transition);
 
 }
 
 .btn:hover{
 
-transform:translateY(-4px);
+    transform:translateY(-4px);
 
-background:#2563eb;
+    background:var(--primary-light);
 
 }
 
 .btn-outline{
 
-padding:18px 40px;
+    padding:18px 40px;
 
-border:2px solid #0B4EA2;
+    border:2px solid var(--primary);
 
-border-radius:8px;
+    border-radius:8px;
 
-text-decoration:none;
+    color:white;
 
-color:white;
+    text-decoration:none;
 
-font-weight:700;
+    font-weight:700;
 
-transition:.3s;
+    transition:var(--transition);
 
 }
 
 .btn-outline:hover{
 
-background:#0B4EA2;
+    background:var(--primary);
 
 }
 
+
+/* =====================================================
+   9. CARDS
+===================================================== */
+
+.card{
+
+    background:rgba(255,255,255,.04);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:var(--radius);
+
+    padding:40px;
+
+    backdrop-filter:blur(10px);
+
+    box-shadow:var(--shadow);
+
+    transition:var(--transition);
+
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:var(--primary);
+
+}
+
+
+/* =====================================================
+   10. PAGE TITLES
+===================================================== */
+
+.section-title{
+
+    font-size:3rem;
+
+    margin-bottom:20px;
+
+}
+
+.section-subtitle{
+
+    font-size:1.2rem;
+
+    color:var(--text-light);
+
+    line-height:1.8;
+
+    max-width:800px;
+
+    margin-bottom:60px;
+
+}
+
+
+/* =====================================================
+   11. CTA
+===================================================== */
+
+.cta{
+
+    background:var(--primary);
+
+    padding:80px;
+
+    border-radius:var(--radius);
+
+    text-align:center;
+
+}
+
+
+/* =====================================================
+   12. INTRO
+===================================================== */
+
 .intro{
 
-max-width:1100px;
+    max-width:1100px;
 
-margin:auto;
+    margin:auto;
 
-padding:120px 40px;
+    padding:120px 40px;
 
-text-align:center;
+    text-align:center;
 
 }
 
 .intro h2{
 
-font-size:3rem;
+    font-size:3rem;
 
-margin-bottom:30px;
+    margin-bottom:30px;
 
 }
 
 .intro p{
 
-font-size:1.2rem;
+    font-size:1.2rem;
 
-line-height:2;
+    line-height:2;
 
-color:#cbd5e1;
+    color:var(--text-light);
 
 }
+
+
+/* =====================================================
+   13. RESPONSIVE
+===================================================== */
 
 @media(max-width:900px){
 
-nav{
+    .grid-2,
+    .grid-3,
+    .grid-4{
 
-padding:20px;
+        grid-template-columns:1fr;
 
-flex-direction:column;
+    }
 
-gap:20px;
+    nav{
 
-}
+        flex-direction:column;
 
-nav ul{
+        padding:20px;
 
-flex-wrap:wrap;
+        gap:20px;
 
-justify-content:center;
+    }
 
-gap:20px;
+    nav ul{
 
-}
+        flex-wrap:wrap;
 
-.hero h1{
+        justify-content:center;
 
-font-size:2.6rem;
+        gap:20px;
 
-}
+    }
+
+    .hero h1{
+
+        font-size:2.6rem;
+
+    }
 
 }
