@@ -17,9 +17,14 @@
 
     --primary:#0B4EA2;
     --primary-hover:#1565C0;
+    --primary-light:#1565C0;
 
     --text:#FFFFFF;
     --text-muted:#B7C4D4;
+    --text-light:#D6E0EA;
+
+    --background-light:#F4F7FA;
+    --white:#FFFFFF;
 
     /* Borders */
     --border:rgba(255,255,255,.08);
@@ -33,14 +38,6 @@
     --space-sm:20px;
     --space-md:40px;
     --space-lg:80px;
-
-   --text:#FFFFFF;
---text-muted:#B7C4D4;
---text-light:#D6E0EA;
-
---background-light:#F4F7FA;
---primary-light:#1565C0;
-
 }
 
 /* =====================================================
