@@ -1303,6 +1303,65 @@ FOOTER
 CONTACT PAGE
 =====================================================*/
 
+/*-----------------------------------------------------
+PAGE HEADER
+-----------------------------------------------------*/
+
+.page-hero{
+
+    min-height:70vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:140px 20px 80px;
+
+    background:linear-gradient(
+        180deg,
+        var(--background),
+        var(--surface)
+    );
+
+    text-align:center;
+
+}
+
+.page-hero .container{
+
+    max-width:900px;
+
+    margin:auto;
+
+}
+
+.page-hero h1{
+
+    font-size:4rem;
+
+    font-weight:800;
+
+    line-height:1.1;
+
+    margin-bottom:30px;
+
+}
+
+.page-hero p{
+
+    max-width:750px;
+
+    margin:0 auto 45px;
+
+    font-size:1.2rem;
+
+    line-height:1.9;
+
+    color:var(--text-muted);
+
+}
 
 /*-----------------------------------------------------
 PAGE INTRODUCTION
