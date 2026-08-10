@@ -754,3 +754,32 @@ nav a:hover {
     }
 
 }
+/* =====================================================
+   ABOUT PAGE
+===================================================== */
+
+.about-hero {
+    min-height: 75vh;
+}
+
+
+.about-text {
+    max-width: 900px;
+}
+
+
+.about-text p {
+    font-size: 1.1rem;
+    line-height: 1.9;
+    margin-bottom: 25px;
+}
+
+
+.section-dark .about-text p {
+    color: var(--text-light);
+}
+
+
+.section-light .about-text p {
+    color: var(--dark-muted);
+}
