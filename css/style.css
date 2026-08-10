@@ -783,3 +783,127 @@ nav a:hover {
 .section-light .about-text p {
     color: var(--dark-muted);
 }
+
+/*=====================================================
+THREE PILLARS
+=====================================================*/
+
+.pillars-header{
+    text-align:center;
+    max-width:850px;
+    margin:0 auto 70px;
+}
+
+.section-label{
+
+    display:inline-block;
+
+    color:var(--primary);
+
+    letter-spacing:4px;
+
+    font-size:.8rem;
+
+    font-weight:700;
+
+    margin-bottom:20px;
+
+    text-transform:uppercase;
+
+}
+
+.pillars-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:35px;
+
+}
+
+.pillar{
+
+    background:var(--surface);
+
+    border:1px solid var(--border);
+
+    border-radius:var(--radius);
+
+    padding:45px;
+
+    transition:var(--transition);
+
+    box-shadow:var(--shadow);
+
+}
+
+.pillar:hover{
+
+    transform:translateY(-10px);
+
+    border-color:var(--primary);
+
+}
+
+.pillar-number{
+
+    font-size:3rem;
+
+    font-weight:800;
+
+    color:rgba(255,255,255,.08);
+
+    margin-bottom:25px;
+
+}
+
+.pillar h3{
+
+    font-size:2rem;
+
+    margin-bottom:20px;
+
+}
+
+.pillar p{
+
+    color:var(--text-muted);
+
+    margin-bottom:30px;
+
+    line-height:1.8;
+
+}
+
+.pillar ul{
+
+    list-style:none;
+
+}
+
+.pillar li{
+
+    padding:12px 0;
+
+    border-top:1px solid rgba(255,255,255,.08);
+
+    color:var(--text);
+
+}
+
+.pillar li:last-child{
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+}
+
+@media(max-width:900px){
+
+    .pillars-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
