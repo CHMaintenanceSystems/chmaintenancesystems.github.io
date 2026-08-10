@@ -754,6 +754,7 @@ nav a:hover {
     }
 
 }
+
 /* =====================================================
    ABOUT PAGE
 ===================================================== */
@@ -783,14 +784,45 @@ nav a:hover {
 .section-light .about-text p {
     color: var(--dark-muted);
 }
+
 /* =====================================================
    SERVICES PAGE
 ===================================================== */
 
 .services-hero {
-    min-height: 75vh;
+    min-height:70vh;
+
+    display:flex;
+
+    align-items:center;
+
+    padding-top:140px;
+
+    padding-bottom:80px;
+
 }
 
+.page-hero .container{
+
+    max-width:900px;
+
+    margin:auto;
+
+    text-align:center;
+
+}
+
+.page-hero h1{
+
+    margin-bottom:30px;
+
+}
+
+.page-hero p{
+
+    margin-bottom:45px;
+
+}
 
 .services-text {
     max-width: 900px;
@@ -812,6 +844,7 @@ nav a:hover {
 .section-light .services-text p {
     color: var(--dark-muted);
 }
+
 /*=====================================================
 THREE PILLARS
 =====================================================*/
