@@ -686,58 +686,332 @@ NAVIGATION
 </section>
 
 <!-- =====================================================
-CONTACT FORM
+     CONTACT - PROJECT ENQUIRY
 ===================================================== -->
 
-<section id="contact-form" class="section section-light">
+<section id="contact-form"
+         class="section section-light contact-enquiry">
 
     <div class="container">
 
-        <div class="pillars-header">
+        <div class="contact-enquiry-grid">
 
-            <span class="section-label">
-                PROJECT ENQUIRY
-            </span>
 
-            <h2 class="section-title">
-                Tell Us About Your Project
-            </h2>
+            <!-- =================================================
+                 ENQUIRY INFORMATION
+            ================================================== -->
 
-            <p class="section-subtitle">
+            <div class="contact-enquiry-info">
 
-                Complete the enquiry below and we'll get back to you as
-                soon as possible.
+                <span class="contact-enquiry-label">
+                    Project Enquiry
+                </span>
 
-            </p>
+                <h2>
+                    Tell us what you
+                    are trying to improve.
+                </h2>
+
+                <p class="contact-enquiry-lead">
+                    You do not need to provide a complete technical specification.
+                    Give us an overview of the challenge, the equipment or system
+                    involved and what you would like to achieve.
+                </p>
+
+
+                <!-- Helpful Information -->
+
+                <div class="contact-enquiry-guidance">
+
+                    <span class="contact-enquiry-guidance-label">
+                        Useful Information
+                    </span>
+
+
+                    <div class="contact-enquiry-guide">
+
+                        <span>
+                            01
+                        </span>
+
+                        <p>
+                            The equipment, process or maintenance system involved.
+                        </p>
+
+                    </div>
+
+
+                    <div class="contact-enquiry-guide">
+
+                        <span>
+                            02
+                        </span>
+
+                        <p>
+                            The problem, recurring issue or improvement opportunity.
+                        </p>
+
+                    </div>
+
+
+                    <div class="contact-enquiry-guide">
+
+                        <span>
+                            03
+                        </span>
+
+                        <p>
+                            What impact the issue is having on your operation.
+                        </p>
+
+                    </div>
+
+
+                    <div class="contact-enquiry-guide">
+
+                        <span>
+                            04
+                        </span>
+
+                        <p>
+                            What you would ideally like the outcome to be.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Availability -->
+
+                <div class="contact-enquiry-availability">
+
+                    <span>
+                        Location
+                    </span>
+
+                    <strong>
+                        North West England
+                    </strong>
+
+                    <p>
+                        Engineering support available nationwide.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================================
+                 ENQUIRY FORM
+            ================================================== -->
+
+            <div class="contact-enquiry-form-wrap">
+
+                <form class="contact-enquiry-form"
+                      id="project-enquiry-form"
+                      action="#"
+                      method="post">
+
+
+                    <!-- Name / Company -->
+
+                    <div class="contact-form-row">
+
+                        <div class="contact-form-field">
+
+                            <label for="contact-name">
+                                Your Name
+                                <span>*</span>
+                            </label>
+
+                            <input
+                                type="text"
+                                id="contact-name"
+                                name="name"
+                                autocomplete="name"
+                                placeholder="Your name"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="contact-form-field">
+
+                            <label for="contact-company">
+                                Company
+                            </label>
+
+                            <input
+                                type="text"
+                                id="contact-company"
+                                name="company"
+                                autocomplete="organization"
+                                placeholder="Company name"
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Email / Telephone -->
+
+                    <div class="contact-form-row">
+
+                        <div class="contact-form-field">
+
+                            <label for="contact-email">
+                                Email Address
+                                <span>*</span>
+                            </label>
+
+                            <input
+                                type="email"
+                                id="contact-email"
+                                name="email"
+                                autocomplete="email"
+                                placeholder="name@company.co.uk"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="contact-form-field">
+
+                            <label for="contact-telephone">
+                                Telephone
+                            </label>
+
+                            <input
+                                type="tel"
+                                id="contact-telephone"
+                                name="telephone"
+                                autocomplete="tel"
+                                placeholder="Telephone number"
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Industry / Service -->
+
+                    <div class="contact-form-row">
+
+                        <div class="contact-form-field">
+
+                            <label for="contact-industry">
+                                Industry
+                            </label>
+
+                            <input
+                                type="text"
+                                id="contact-industry"
+                                name="industry"
+                                placeholder="e.g. Manufacturing"
+                            >
+
+                        </div>
+
+
+                        <div class="contact-form-field">
+
+                            <label for="contact-service">
+                                Area of Interest
+                                <span>*</span>
+                            </label>
+
+                            <select
+                                id="contact-service"
+                                name="service"
+                                required
+                            >
+
+                                <option value="" selected disabled>
+                                    Select an area
+                                </option>
+
+                                <option value="engineering">
+                                    Engineering Support
+                                </option>
+
+                                <option value="maintenance-systems">
+                                    Maintenance Systems
+                                </option>
+
+                                <option value="engineering-software">
+                                    Engineering Software
+                                </option>
+
+                                <option value="multiple">
+                                    Multiple Areas
+                                </option>
+
+                                <option value="unsure">
+                                    Not Sure Yet
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Project Details -->
+
+                    <div class="contact-form-field contact-form-message">
+
+                        <label for="contact-message">
+                            Tell Us About the Requirement
+                            <span>*</span>
+                        </label>
+
+                        <textarea
+                            id="contact-message"
+                            name="message"
+                            rows="8"
+                            placeholder="Describe the equipment, maintenance challenge, recurring problem or improvement you would like to discuss..."
+                            required
+                        ></textarea>
+
+                    </div>
+
+
+                    <!-- Submit Area -->
+
+                    <div class="contact-form-submit">
+
+                        <button class="btn"
+                                type="submit">
+
+                            Submit Enquiry
+
+                        </button>
+
+
+                        <p>
+                            Fields marked * are required.
+                        </p>
+
+                    </div>
+
+
+                </form>
+
+            </div>
+
 
         </div>
-
-        <form class="contact-form">
-
-            <input type="text" placeholder="Your Name">
-
-            <input type="text" placeholder="Company">
-
-            <input type="email" placeholder="Email Address">
-
-            <input type="tel" placeholder="Telephone">
-
-            <input type="text" placeholder="Industry">
-
-            <input type="text" placeholder="Service Required">
-
-            <textarea rows="8" placeholder="Tell us about your project..."></textarea>
-
-            <button class="btn" type="submit">
-                Submit Enquiry
-            </button>
-
-        </form>
 
     </div>
 
 </section>
-
 
 <!-- =====================================================
 FINAL CTA
