@@ -6971,3 +6971,218 @@ FAQ
     }
 
 }
+
+/* =====================================================
+   CONTACT PAGE - INTRODUCTION
+===================================================== */
+
+.contact-overview {
+    position: relative;
+}
+
+
+/* =====================================================
+   MAIN LAYOUT
+===================================================== */
+
+.contact-overview-grid {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 0.9fr)
+        minmax(0, 1.1fr);
+
+    gap: 120px;
+
+    align-items: start;
+}
+
+
+/* =====================================================
+   OVERVIEW HEADING
+===================================================== */
+
+.contact-overview-heading {
+    max-width: 580px;
+}
+
+
+.contact-overview-label {
+    display: inline-block;
+
+    margin-bottom: 24px;
+
+    color: var(--primary-light);
+
+    font-size: 0.78rem;
+    font-weight: 700;
+
+    letter-spacing: 4px;
+
+    text-transform: uppercase;
+}
+
+
+.contact-overview-heading h2 {
+    color: var(--text);
+
+    font-size: 3rem;
+    font-weight: 700;
+
+    line-height: 1.15;
+
+    letter-spacing: -1px;
+}
+
+
+/* =====================================================
+   OVERVIEW CONTENT
+===================================================== */
+
+.contact-overview-content {
+    max-width: 680px;
+}
+
+
+.contact-overview-content > p {
+    margin-bottom: 28px;
+
+    color: var(--text-light);
+
+    font-size: 1rem;
+
+    line-height: 1.95;
+}
+
+
+/* Lead paragraph */
+
+.contact-overview-content .contact-overview-lead {
+    margin-bottom: 35px;
+
+    color: var(--text);
+
+    font-size: 1.2rem;
+    font-weight: 500;
+
+    line-height: 1.8;
+}
+
+
+/* =====================================================
+   CLOSING STATEMENT
+===================================================== */
+
+.contact-overview-statement {
+    margin-top: 50px;
+
+    padding: 30px 0;
+
+    border-top:
+        1px solid var(--border);
+
+    border-bottom:
+        1px solid var(--border);
+}
+
+
+.contact-overview-statement span {
+    display: block;
+
+    margin-bottom: 15px;
+
+    color: var(--primary-light);
+
+    font-size: 0.7rem;
+    font-weight: 700;
+
+    letter-spacing: 3px;
+
+    text-transform: uppercase;
+}
+
+
+.contact-overview-statement strong {
+    display: block;
+
+    max-width: 620px;
+
+    color: var(--text);
+
+    font-size: 1.35rem;
+    font-weight: 600;
+
+    line-height: 1.6;
+}
+
+
+/* =====================================================
+   CONTACT INTRO RESPONSIVE
+===================================================== */
+
+@media (max-width: 900px) {
+
+    .contact-overview-grid {
+        grid-template-columns: 1fr;
+
+        gap: 55px;
+    }
+
+
+    .contact-overview-heading {
+        max-width: 700px;
+    }
+
+
+    .contact-overview-heading h2 {
+        font-size: 2.6rem;
+    }
+
+
+    .contact-overview-content {
+        max-width: 760px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .contact-overview-label {
+        margin-bottom: 20px;
+
+        font-size: 0.7rem;
+
+        letter-spacing: 3px;
+    }
+
+
+    .contact-overview-heading h2 {
+        font-size: 2.15rem;
+
+        letter-spacing: -0.5px;
+    }
+
+
+    .contact-overview-content .contact-overview-lead {
+        font-size: 1.1rem;
+    }
+
+
+    .contact-overview-content > p {
+        font-size: 0.95rem;
+
+        line-height: 1.85;
+    }
+
+
+    .contact-overview-statement {
+        margin-top: 40px;
+    }
+
+
+    .contact-overview-statement strong {
+        font-size: 1.15rem;
+    }
+
+}
