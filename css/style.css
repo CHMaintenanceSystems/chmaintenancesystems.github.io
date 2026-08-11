@@ -8421,3 +8421,258 @@ FAQ
     }
 
 }
+
+/* =====================================================
+   CONTACT PAGE - FINAL CTA
+===================================================== */
+
+.contact-final {
+    position: relative;
+}
+
+
+/* =====================================================
+   MAIN STRUCTURE
+===================================================== */
+
+.contact-final-inner {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1.05fr)
+        minmax(0, 0.95fr);
+
+    gap: 110px;
+
+    align-items: start;
+
+    padding:
+        25px 0;
+}
+
+
+/* =====================================================
+   CTA CONTENT
+===================================================== */
+
+.contact-final-content {
+    max-width: 700px;
+}
+
+
+.contact-final-label {
+    display: inline-block;
+
+    margin-bottom: 24px;
+
+    color: var(--primary-light);
+
+    font-size: 0.78rem;
+    font-weight: 700;
+
+    letter-spacing: 4px;
+
+    text-transform: uppercase;
+}
+
+
+.contact-final-content h2 {
+    max-width: 680px;
+
+    margin-bottom: 30px;
+
+    color: var(--text);
+
+    font-size: 3.1rem;
+    font-weight: 700;
+
+    line-height: 1.15;
+
+    letter-spacing: -1px;
+}
+
+
+.contact-final-content p {
+    max-width: 650px;
+
+    color: var(--text-light);
+
+    font-size: 1.05rem;
+
+    line-height: 1.9;
+}
+
+
+/* =====================================================
+   CTA DETAILS
+===================================================== */
+
+.contact-final-details {
+    border-top:
+        1px solid var(--border);
+}
+
+
+.contact-final-detail {
+    display: grid;
+
+    grid-template-columns:
+        45px 1fr;
+
+    gap: 22px;
+
+    padding:
+        26px 0;
+
+    border-bottom:
+        1px solid var(--border);
+}
+
+
+.contact-final-detail > span {
+    padding-top: 3px;
+
+    color: var(--primary-light);
+
+    font-size: 0.7rem;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+
+.contact-final-detail strong {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: var(--text);
+
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+
+.contact-final-detail p {
+    max-width: 500px;
+
+    color: var(--text-light);
+
+    font-size: 0.88rem;
+
+    line-height: 1.7;
+}
+
+
+/* =====================================================
+   CTA LINK
+===================================================== */
+
+.contact-final-link {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-top: 30px;
+
+    color: var(--primary-light);
+
+    font-size: 0.85rem;
+    font-weight: 700;
+
+    text-decoration: none;
+
+    transition:
+        var(--transition);
+}
+
+
+.contact-final-link span {
+    transition:
+        var(--transition);
+}
+
+
+.contact-final-link:hover {
+    color: var(--text);
+}
+
+
+.contact-final-link:hover span {
+    transform:
+        translateX(5px);
+}
+
+
+/* =====================================================
+   CONTACT FINAL RESPONSIVE
+===================================================== */
+
+@media (max-width: 900px) {
+
+    .contact-final-inner {
+        grid-template-columns: 1fr;
+
+        gap: 55px;
+    }
+
+
+    .contact-final-content {
+        max-width: 760px;
+    }
+
+
+    .contact-final-content h2 {
+        font-size: 2.6rem;
+    }
+
+
+    .contact-final-details {
+        max-width: 760px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .contact-final-label {
+        margin-bottom: 20px;
+
+        font-size: 0.7rem;
+
+        letter-spacing: 3px;
+    }
+
+
+    .contact-final-content h2 {
+        font-size: 2.15rem;
+
+        letter-spacing: -0.5px;
+    }
+
+
+    .contact-final-content p {
+        font-size: 1rem;
+
+        line-height: 1.8;
+    }
+
+
+    .contact-final-inner {
+        gap: 45px;
+    }
+
+
+    .contact-final-detail {
+        grid-template-columns:
+            38px 1fr;
+
+        gap: 16px;
+
+        padding: 23px 0;
+    }
+
+}
