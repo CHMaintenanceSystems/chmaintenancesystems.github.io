@@ -1870,3 +1870,223 @@ FAQ
     }
 
 }
+
+/* =====================================================
+   HOMEPAGE - OUR APPROACH
+===================================================== */
+
+.home-intro {
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+/* Main layout */
+
+.home-intro-grid {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1.05fr)
+        minmax(0, 0.95fr);
+
+    gap: 100px;
+
+    align-items: start;
+}
+
+
+/* =====================================================
+   INTRODUCTION COPY
+===================================================== */
+
+.home-intro-copy {
+    max-width: 620px;
+}
+
+
+.home-intro-label {
+    display: inline-block;
+
+    margin-bottom: 24px;
+
+    color: var(--primary-light);
+
+    font-size: 0.78rem;
+    font-weight: 700;
+
+    letter-spacing: 4px;
+
+    text-transform: uppercase;
+}
+
+
+.home-intro-copy h2 {
+    max-width: 600px;
+
+    margin-bottom: 30px;
+
+    font-size: 3.2rem;
+    font-weight: 700;
+
+    line-height: 1.15;
+
+    letter-spacing: -1px;
+
+    color: var(--text);
+}
+
+
+.home-intro-copy p {
+    max-width: 600px;
+
+    color: var(--text-light);
+
+    font-size: 1.1rem;
+
+    line-height: 1.9;
+}
+
+
+/* =====================================================
+   APPROACH PRINCIPLES
+===================================================== */
+
+.home-intro-principles {
+    border-top: 1px solid var(--border);
+}
+
+
+.home-intro-item {
+    display: grid;
+
+    grid-template-columns: 55px 1fr;
+
+    gap: 25px;
+
+    padding: 30px 0;
+
+    border-bottom: 1px solid var(--border);
+}
+
+
+/* Number */
+
+.home-intro-number {
+    padding-top: 3px;
+
+    color: var(--primary-light);
+
+    font-size: 0.75rem;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+
+/* Item heading */
+
+.home-intro-item h3 {
+    margin-bottom: 10px;
+
+    color: var(--text);
+
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+
+/* Item text */
+
+.home-intro-item p {
+    max-width: 520px;
+
+    color: var(--text-muted);
+
+    font-size: 0.95rem;
+
+    line-height: 1.8;
+}
+
+/* =====================================================
+   HOMEPAGE INTRO RESPONSIVE
+===================================================== */
+
+@media (max-width: 900px) {
+
+    .home-intro-grid {
+        grid-template-columns: 1fr;
+
+        gap: 60px;
+    }
+
+
+    .home-intro-copy {
+        max-width: 700px;
+    }
+
+
+    .home-intro-copy h2 {
+        font-size: 2.7rem;
+    }
+
+
+    .home-intro-copy p {
+        max-width: 700px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .home-intro-label {
+        margin-bottom: 20px;
+
+        font-size: 0.7rem;
+
+        letter-spacing: 3px;
+    }
+
+
+    .home-intro-copy h2 {
+        margin-bottom: 24px;
+
+        font-size: 2.2rem;
+
+        letter-spacing: -0.5px;
+    }
+
+
+    .home-intro-copy p {
+        font-size: 1rem;
+
+        line-height: 1.8;
+    }
+
+
+    .home-intro-grid {
+        gap: 45px;
+    }
+
+
+    .home-intro-item {
+        grid-template-columns: 42px 1fr;
+
+        gap: 18px;
+
+        padding: 25px 0;
+    }
+
+
+    .home-intro-item h3 {
+        font-size: 1.1rem;
+    }
+
+
+    .home-intro-item p {
+        font-size: 0.9rem;
+    }
+
+}
