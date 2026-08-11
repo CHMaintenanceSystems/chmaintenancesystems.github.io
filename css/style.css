@@ -3126,3 +3126,225 @@ FAQ
     }
 
 }
+
+/* =====================================================
+   ABOUT PAGE - COMPANY STORY
+===================================================== */
+
+.about-story {
+    position: relative;
+}
+
+
+/* Main layout */
+
+.about-story-grid {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 0.9fr)
+        minmax(0, 1.1fr);
+
+    gap: 120px;
+
+    align-items: start;
+}
+
+
+/* =====================================================
+   STORY HEADING
+===================================================== */
+
+.about-story-heading {
+    position: sticky;
+
+    top: 150px;
+
+    max-width: 560px;
+}
+
+
+.about-story-label {
+    display: inline-block;
+
+    margin-bottom: 24px;
+
+    color: var(--primary-light);
+
+    font-size: 0.78rem;
+    font-weight: 700;
+
+    letter-spacing: 4px;
+
+    text-transform: uppercase;
+}
+
+
+.about-story-heading h2 {
+    color: var(--text);
+
+    font-size: 3rem;
+    font-weight: 700;
+
+    line-height: 1.15;
+
+    letter-spacing: -1px;
+}
+
+
+/* =====================================================
+   STORY CONTENT
+===================================================== */
+
+.about-story-content {
+    max-width: 680px;
+
+    padding-top: 5px;
+}
+
+
+.about-story-content > p {
+    margin-bottom: 28px;
+
+    color: var(--text-light);
+
+    font-size: 1rem;
+
+    line-height: 1.95;
+}
+
+
+/* Opening statement */
+
+.about-story-content .about-story-lead {
+    margin-bottom: 35px;
+
+    color: var(--text);
+
+    font-size: 1.25rem;
+    font-weight: 500;
+
+    line-height: 1.8;
+}
+
+
+/* =====================================================
+   STORY STATEMENT
+===================================================== */
+
+.about-story-statement {
+    margin-top: 50px;
+
+    padding:
+        30px 0;
+
+    border-top:
+        1px solid var(--border);
+
+    border-bottom:
+        1px solid var(--border);
+}
+
+
+.about-story-statement span {
+    display: block;
+
+    margin-bottom: 15px;
+
+    color: var(--primary-light);
+
+    font-size: 0.7rem;
+    font-weight: 700;
+
+    letter-spacing: 3px;
+
+    text-transform: uppercase;
+}
+
+
+.about-story-statement strong {
+    display: block;
+
+    max-width: 620px;
+
+    color: var(--text);
+
+    font-size: 1.35rem;
+    font-weight: 600;
+
+    line-height: 1.6;
+}
+
+
+/* =====================================================
+   COMPANY STORY RESPONSIVE
+===================================================== */
+
+@media (max-width: 900px) {
+
+    .about-story-grid {
+        grid-template-columns: 1fr;
+
+        gap: 55px;
+    }
+
+
+    .about-story-heading {
+        position: static;
+
+        max-width: 700px;
+    }
+
+
+    .about-story-heading h2 {
+        font-size: 2.6rem;
+    }
+
+
+    .about-story-content {
+        max-width: 760px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .about-story-label {
+        margin-bottom: 20px;
+
+        font-size: 0.7rem;
+
+        letter-spacing: 3px;
+    }
+
+
+    .about-story-heading h2 {
+        font-size: 2.15rem;
+
+        letter-spacing: -0.5px;
+    }
+
+
+    .about-story-content .about-story-lead {
+        font-size: 1.1rem;
+    }
+
+
+    .about-story-content > p {
+        font-size: 0.95rem;
+
+        line-height: 1.85;
+    }
+
+
+    .about-story-statement {
+        margin-top: 40px;
+    }
+
+
+    .about-story-statement strong {
+        font-size: 1.15rem;
+    }
+
+}
