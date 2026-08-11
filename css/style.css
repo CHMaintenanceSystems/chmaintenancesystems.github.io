@@ -1021,11 +1021,6 @@ nav ul a:hover::after {
    ABOUT PAGE
 ===================================================== */
 
-.about-hero {
-    min-height: 75vh;
-}
-
-
 .about-text {
     max-width: 900px;
 }
