@@ -256,67 +256,63 @@ nav ul a:hover::after {
     width: 100%;
 }
 
-/* =====================================================
-   7. HERO
-===================================================== */
+<!-- =====================================================
+     HERO
+===================================================== -->
 
-.hero {
+<header class="hero">
 
-    min-height: 100vh;
+    <div class="hero-content">
 
-    display: flex;
+        <div class="hero-label">
+            Engineering · Systems · Innovation
+        </div>
 
-    justify-content: center;
+        <h1>
+            Industrial Reliability &amp;
+            Maintenance Solutions
+        </h1>
 
-    align-items: center;
+        <p class="hero-description">
+            Helping manufacturers reduce downtime through engineering consultancy,
+            maintenance systems and intelligent software.
+        </p>
 
-    text-align: center;
+        <div class="buttons">
 
-    padding: 120px 20px 80px;
+            <a href="contact.html" class="btn">
+                Book a Consultation
+            </a>
 
-    background:
+            <a href="services.html" class="btn-outline">
+                Explore Services
+            </a>
 
-        linear-gradient(
-            180deg,
-            var(--background),
-            var(--surface)
-        );
-
-}
-
-
-.hero-content {
-
-    max-width: 900px;
-
-}
-
-
-.hero h1 {
-
-    font-size: 4rem;
-
-    font-weight: 800;
-
-    line-height: 1.1;
-
-    margin-bottom: 30px;
-
-}
+        </div>
 
 
-.hero p {
+        <div class="hero-capabilities">
 
-    font-size: 1.3rem;
+            <div class="hero-capability">
+                <span class="hero-capability-number">01</span>
+                <span>Engineering Support</span>
+            </div>
 
-    line-height: 1.8;
+            <div class="hero-capability">
+                <span class="hero-capability-number">02</span>
+                <span>Maintenance Systems</span>
+            </div>
 
-    color: var(--text-light);
+            <div class="hero-capability">
+                <span class="hero-capability-number">03</span>
+                <span>Engineering Software</span>
+            </div>
 
-    margin-bottom: 40px;
+        </div>
 
-}
+    </div>
 
+</header>
 
 /* =====================================================
    8. BUTTONS
