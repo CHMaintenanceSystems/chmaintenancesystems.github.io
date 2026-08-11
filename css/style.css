@@ -3592,3 +3592,267 @@ FAQ
     }
 
 }
+
+/* =====================================================
+   ABOUT PAGE - HOW WE THINK
+===================================================== */
+
+.about-thinking {
+    position: relative;
+}
+
+
+/* =====================================================
+   SECTION HEADER
+===================================================== */
+
+.about-thinking-header {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1.1fr)
+        minmax(0, 0.9fr);
+
+    gap: 110px;
+
+    align-items: end;
+
+    margin-bottom: 75px;
+}
+
+
+.about-thinking-heading {
+    max-width: 720px;
+}
+
+
+.about-thinking-label {
+    display: inline-block;
+
+    margin-bottom: 24px;
+
+    color: var(--primary-light);
+
+    font-size: 0.78rem;
+    font-weight: 700;
+
+    letter-spacing: 4px;
+
+    text-transform: uppercase;
+}
+
+
+.about-thinking-heading h2 {
+    max-width: 680px;
+
+    color: var(--text);
+
+    font-size: 3rem;
+    font-weight: 700;
+
+    line-height: 1.15;
+
+    letter-spacing: -1px;
+}
+
+
+.about-thinking-intro {
+    max-width: 540px;
+}
+
+
+.about-thinking-intro p {
+    color: var(--text-light);
+
+    font-size: 1.05rem;
+
+    line-height: 1.9;
+}
+
+
+/* =====================================================
+   PHILOSOPHY LIST
+===================================================== */
+
+.about-thinking-list {
+    border-top:
+        1px solid var(--border);
+}
+
+
+.about-thinking-item {
+    display: grid;
+
+    grid-template-columns:
+        80px
+        minmax(220px, 0.7fr)
+        minmax(0, 1.3fr);
+
+    gap: 40px;
+
+    align-items: start;
+
+    padding: 42px 0;
+
+    border-bottom:
+        1px solid var(--border);
+}
+
+
+/* Number */
+
+.about-thinking-number {
+    padding-top: 5px;
+
+    color: var(--primary-light);
+
+    font-size: 0.72rem;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+
+/* =====================================================
+   PHILOSOPHY TITLE
+===================================================== */
+
+.about-thinking-title span {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: var(--text-muted);
+
+    font-size: 0.7rem;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+}
+
+
+.about-thinking-title h3 {
+    color: var(--text);
+
+    font-size: 1.7rem;
+    font-weight: 700;
+
+    line-height: 1.25;
+}
+
+
+/* =====================================================
+   PHILOSOPHY CONTENT
+===================================================== */
+
+.about-thinking-content p {
+    max-width: 640px;
+
+    color: var(--text-light);
+
+    font-size: 0.98rem;
+
+    line-height: 1.85;
+}
+
+
+/* =====================================================
+   HOW WE THINK RESPONSIVE
+===================================================== */
+
+@media (max-width: 900px) {
+
+    .about-thinking-header {
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+
+        margin-bottom: 55px;
+    }
+
+
+    .about-thinking-heading h2 {
+        font-size: 2.6rem;
+    }
+
+
+    .about-thinking-intro {
+        max-width: 700px;
+    }
+
+
+    .about-thinking-item {
+        grid-template-columns:
+            60px
+            minmax(180px, 0.7fr)
+            minmax(0, 1.3fr);
+
+        gap: 25px;
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .about-thinking-label {
+        margin-bottom: 20px;
+
+        font-size: 0.7rem;
+
+        letter-spacing: 3px;
+    }
+
+
+    .about-thinking-heading h2 {
+        font-size: 2.15rem;
+
+        letter-spacing: -0.5px;
+    }
+
+
+    .about-thinking-intro p {
+        font-size: 1rem;
+
+        line-height: 1.8;
+    }
+
+
+    .about-thinking-item {
+        grid-template-columns:
+            42px 1fr;
+
+        gap: 15px 20px;
+
+        padding: 32px 0;
+    }
+
+
+    .about-thinking-number {
+        grid-row:
+            1 / 3;
+    }
+
+
+    .about-thinking-title {
+        grid-column: 2;
+    }
+
+
+    .about-thinking-content {
+        grid-column: 2;
+    }
+
+
+    .about-thinking-title h3 {
+        font-size: 1.45rem;
+    }
+
+
+    .about-thinking-content p {
+        font-size: 0.95rem;
+    }
+
+}
