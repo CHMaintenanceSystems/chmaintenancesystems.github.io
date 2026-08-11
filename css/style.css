@@ -2703,3 +2703,188 @@ FAQ
     }
 
 }
+
+/* =====================================================
+   HOMEPAGE - FINAL CTA
+===================================================== */
+
+.home-cta {
+    position: relative;
+}
+
+
+/* Main CTA structure */
+
+.home-cta-inner {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1.25fr)
+        minmax(280px, 0.75fr);
+
+    gap: 100px;
+
+    align-items: center;
+
+    padding:
+        75px 0;
+
+    border-top:
+        1px solid #D5DDE5;
+
+    border-bottom:
+        1px solid #D5DDE5;
+}
+
+
+/* =====================================================
+   CTA CONTENT
+===================================================== */
+
+.home-cta-content {
+    max-width: 760px;
+}
+
+
+.home-cta-label {
+    display: inline-block;
+
+    margin-bottom: 22px;
+
+    color: var(--primary);
+
+    font-size: 0.78rem;
+    font-weight: 700;
+
+    letter-spacing: 4px;
+
+    text-transform: uppercase;
+}
+
+
+.home-cta-content h2 {
+    max-width: 720px;
+
+    margin-bottom: 28px;
+
+    color: var(--dark-text);
+
+    font-size: 3.2rem;
+    font-weight: 700;
+
+    line-height: 1.15;
+
+    letter-spacing: -1px;
+}
+
+
+.home-cta-content p {
+    max-width: 680px;
+
+    color: var(--dark-muted);
+
+    font-size: 1.05rem;
+
+    line-height: 1.9;
+}
+
+
+/* =====================================================
+   CTA ACTION
+===================================================== */
+
+.home-cta-action {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 18px;
+}
+
+
+.home-cta-action .btn {
+    min-width: 240px;
+
+    text-align: center;
+}
+
+
+.home-cta-action span {
+    max-width: 280px;
+
+    color: var(--dark-muted);
+
+    font-size: 0.8rem;
+    font-weight: 600;
+
+    line-height: 1.6;
+}
+
+
+/* =====================================================
+   FINAL CTA RESPONSIVE
+===================================================== */
+
+@media (max-width: 900px) {
+
+    .home-cta-inner {
+        grid-template-columns: 1fr;
+
+        gap: 45px;
+
+        padding:
+            60px 0;
+    }
+
+
+    .home-cta-content h2 {
+        font-size: 2.7rem;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .home-cta-inner {
+        padding:
+            50px 0;
+    }
+
+
+    .home-cta-label {
+        margin-bottom: 20px;
+
+        font-size: 0.7rem;
+
+        letter-spacing: 3px;
+    }
+
+
+    .home-cta-content h2 {
+        font-size: 2.15rem;
+
+        letter-spacing: -0.5px;
+    }
+
+
+    .home-cta-content p {
+        font-size: 1rem;
+
+        line-height: 1.8;
+    }
+
+
+    .home-cta-action {
+        align-items: stretch;
+    }
+
+
+    .home-cta-action .btn {
+        width: 100%;
+        min-width: 0;
+    }
+
+}
