@@ -7601,3 +7601,321 @@ FAQ
     }
 
 }
+
+/* =====================================================
+   CONTACT PAGE - WHAT HAPPENS NEXT
+===================================================== */
+
+.contact-process {
+    position: relative;
+}
+
+
+/* =====================================================
+   SECTION HEADER
+===================================================== */
+
+.contact-process-header {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1.15fr)
+        minmax(0, 0.85fr);
+
+    gap: 100px;
+
+    align-items: end;
+
+    margin-bottom: 75px;
+}
+
+
+.contact-process-heading {
+    max-width: 720px;
+}
+
+
+.contact-process-label {
+    display: inline-block;
+
+    margin-bottom: 24px;
+
+    color: var(--primary-light);
+
+    font-size: 0.78rem;
+    font-weight: 700;
+
+    letter-spacing: 4px;
+
+    text-transform: uppercase;
+}
+
+
+.contact-process-heading h2 {
+    color: var(--text);
+
+    font-size: 3rem;
+    font-weight: 700;
+
+    line-height: 1.15;
+
+    letter-spacing: -1px;
+}
+
+
+.contact-process-intro {
+    max-width: 550px;
+}
+
+
+.contact-process-intro p {
+    color: var(--text-light);
+
+    font-size: 1.05rem;
+
+    line-height: 1.9;
+}
+
+
+/* =====================================================
+   PROCESS GRID
+===================================================== */
+
+.contact-process-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    border-top:
+        1px solid var(--border);
+
+    border-bottom:
+        1px solid var(--border);
+}
+
+
+/* Individual step */
+
+.contact-process-step {
+    display: flex;
+
+    flex-direction: column;
+
+    min-height: 390px;
+
+    padding:
+        40px 32px 35px;
+}
+
+
+.contact-process-step + .contact-process-step {
+    border-left:
+        1px solid var(--border);
+}
+
+
+/* =====================================================
+   NUMBER
+===================================================== */
+
+.contact-process-number {
+    margin-bottom: 26px;
+
+    color: var(--primary-light);
+
+    font-size: 0.72rem;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+
+/* =====================================================
+   STAGE LABEL
+===================================================== */
+
+.contact-process-stage {
+    display: block;
+
+    margin-bottom: 12px;
+
+    color: var(--text-muted);
+
+    font-size: 0.7rem;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+}
+
+
+/* =====================================================
+   HEADING
+===================================================== */
+
+.contact-process-step h3 {
+    margin-bottom: 20px;
+
+    color: var(--text);
+
+    font-size: 1.4rem;
+    font-weight: 700;
+
+    line-height: 1.4;
+}
+
+
+/* =====================================================
+   DESCRIPTION
+===================================================== */
+
+.contact-process-step p {
+    margin-bottom: 35px;
+
+    color: var(--text-light);
+
+    font-size: 0.93rem;
+
+    line-height: 1.8;
+}
+
+
+/* =====================================================
+   RESULT
+===================================================== */
+
+.contact-process-result {
+    margin-top: auto;
+
+    padding-top: 20px;
+
+    border-top:
+        1px solid var(--border);
+
+    color: var(--primary-light);
+
+    font-size: 0.7rem;
+    font-weight: 700;
+
+    letter-spacing: 0.8px;
+
+    text-transform: uppercase;
+}
+
+
+/* =====================================================
+   CONTACT PROCESS RESPONSIVE
+===================================================== */
+
+@media (max-width: 1000px) {
+
+    .contact-process-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+
+    .contact-process-step:nth-child(3) {
+        border-left: none;
+
+        border-top:
+            1px solid var(--border);
+    }
+
+
+    .contact-process-step:nth-child(4) {
+        border-top:
+            1px solid var(--border);
+    }
+
+}
+
+
+@media (max-width: 900px) {
+
+    .contact-process-header {
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+
+        margin-bottom: 55px;
+    }
+
+
+    .contact-process-heading h2 {
+        font-size: 2.6rem;
+    }
+
+
+    .contact-process-intro {
+        max-width: 700px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .contact-process-label {
+        margin-bottom: 20px;
+
+        font-size: 0.7rem;
+
+        letter-spacing: 3px;
+    }
+
+
+    .contact-process-heading h2 {
+        font-size: 2.15rem;
+
+        letter-spacing: -0.5px;
+    }
+
+
+    .contact-process-intro p {
+        font-size: 1rem;
+
+        line-height: 1.8;
+    }
+
+
+    .contact-process-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .contact-process-step {
+        min-height: auto;
+
+        padding:
+            35px 0;
+    }
+
+
+    .contact-process-step + .contact-process-step,
+    .contact-process-step:nth-child(3),
+    .contact-process-step:nth-child(4) {
+        border-left: none;
+
+        border-top:
+            1px solid var(--border);
+    }
+
+
+    .contact-process-step h3 {
+        font-size: 1.3rem;
+    }
+
+
+    .contact-process-step p {
+        font-size: 0.95rem;
+    }
+
+
+    .contact-process-result {
+        margin-top: 0;
+    }
+
+}
