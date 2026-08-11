@@ -2090,3 +2090,306 @@ FAQ
     }
 
 }
+
+/* =====================================================
+   HOMEPAGE - WHAT WE DO
+===================================================== */
+
+.home-services {
+    position: relative;
+}
+
+
+/* =====================================================
+   SECTION HEADER
+===================================================== */
+
+.home-services-header {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1.2fr)
+        minmax(0, 0.8fr);
+
+    gap: 100px;
+
+    align-items: end;
+
+    margin-bottom: 70px;
+}
+
+
+.home-services-heading {
+    max-width: 720px;
+}
+
+
+.home-services-label {
+    display: inline-block;
+
+    margin-bottom: 22px;
+
+    color: var(--primary);
+
+    font-size: 0.78rem;
+    font-weight: 700;
+
+    letter-spacing: 4px;
+
+    text-transform: uppercase;
+}
+
+
+.home-services-heading h2 {
+    color: var(--dark-text);
+
+    font-size: 3rem;
+    font-weight: 700;
+
+    line-height: 1.15;
+
+    letter-spacing: -1px;
+}
+
+
+.home-services-intro {
+    max-width: 500px;
+}
+
+
+.home-services-intro p {
+    color: var(--dark-muted);
+
+    font-size: 1.05rem;
+
+    line-height: 1.9;
+}
+
+
+/* =====================================================
+   SERVICE GRID
+===================================================== */
+
+.home-services-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    border-top: 1px solid #D5DDE5;
+    border-bottom: 1px solid #D5DDE5;
+}
+
+
+/* Individual service */
+
+.home-service {
+    padding: 45px 40px 50px;
+}
+
+
+.home-service + .home-service {
+    border-left: 1px solid #D5DDE5;
+}
+
+
+/* Number */
+
+.home-service-number {
+    margin-bottom: 25px;
+
+    color: var(--primary);
+
+    font-size: 0.75rem;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+
+/* Heading */
+
+.home-service h3 {
+    margin-bottom: 20px;
+
+    color: var(--dark-text);
+
+    font-size: 1.65rem;
+    font-weight: 700;
+
+    line-height: 1.25;
+}
+
+
+/* Description */
+
+.home-service > p {
+    min-height: 115px;
+
+    margin-bottom: 30px;
+
+    color: var(--dark-muted);
+
+    font-size: 0.98rem;
+
+    line-height: 1.8;
+}
+
+
+/* Service details */
+
+.home-service ul {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+
+.home-service li {
+    position: relative;
+
+    padding:
+        13px 0
+        13px 20px;
+
+    border-top: 1px solid #E0E6EC;
+
+    color: var(--dark-text);
+
+    font-size: 0.9rem;
+    font-weight: 500;
+
+    line-height: 1.5;
+}
+
+
+.home-service li::before {
+    content: "";
+
+    position: absolute;
+
+    top: 50%;
+    left: 0;
+
+    width: 7px;
+    height: 2px;
+
+    background: var(--primary);
+
+    transform: translateY(-50%);
+}
+
+
+.home-service li:last-child {
+    border-bottom: 1px solid #E0E6EC;
+}
+
+
+/* =====================================================
+   SERVICES CTA
+===================================================== */
+
+.home-services-action {
+    display: flex;
+
+    justify-content: center;
+
+    margin-top: 55px;
+}
+
+
+/* =====================================================
+   HOMEPAGE SERVICES RESPONSIVE
+===================================================== */
+
+@media (max-width: 900px) {
+
+    .home-services-header {
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+
+        margin-bottom: 55px;
+    }
+
+
+    .home-services-heading h2 {
+        font-size: 2.6rem;
+    }
+
+
+    .home-services-intro {
+        max-width: 700px;
+    }
+
+
+    .home-services-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .home-service {
+        padding: 40px 0;
+    }
+
+
+    .home-service + .home-service {
+        border-left: none;
+        border-top: 1px solid #D5DDE5;
+    }
+
+
+    .home-service > p {
+        min-height: auto;
+
+        max-width: 700px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .home-services-label {
+        margin-bottom: 20px;
+
+        font-size: 0.7rem;
+
+        letter-spacing: 3px;
+    }
+
+
+    .home-services-heading h2 {
+        font-size: 2.15rem;
+
+        letter-spacing: -0.5px;
+    }
+
+
+    .home-services-intro p {
+        font-size: 1rem;
+
+        line-height: 1.8;
+    }
+
+
+    .home-service {
+        padding: 35px 0;
+    }
+
+
+    .home-service h3 {
+        font-size: 1.45rem;
+    }
+
+
+    .home-service > p {
+        font-size: 0.95rem;
+    }
+
+
+    .home-services-action {
+        margin-top: 45px;
+    }
+
+}
