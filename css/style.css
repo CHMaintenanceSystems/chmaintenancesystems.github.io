@@ -5668,3 +5668,372 @@ FAQ
     }
 
 }
+
+/* =====================================================
+   SERVICES PAGE - DETAILED ENGINEERING
+===================================================== */
+
+.services-engineering {
+    position: relative;
+}
+
+
+/* =====================================================
+   DETAIL HEADER
+===================================================== */
+
+.services-detail-header {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1.1fr)
+        minmax(0, 0.9fr);
+
+    gap: 110px;
+
+    align-items: end;
+
+    margin-bottom: 75px;
+}
+
+
+.services-detail-heading {
+    max-width: 720px;
+}
+
+
+.services-detail-label {
+    display: inline-block;
+
+    margin-bottom: 24px;
+
+    color: var(--primary);
+
+    font-size: 0.78rem;
+    font-weight: 700;
+
+    letter-spacing: 4px;
+
+    text-transform: uppercase;
+}
+
+
+.services-detail-heading h2 {
+    color: var(--dark-text);
+
+    font-size: 3rem;
+    font-weight: 700;
+
+    line-height: 1.15;
+
+    letter-spacing: -1px;
+}
+
+
+.services-detail-intro {
+    max-width: 560px;
+}
+
+
+.services-detail-intro p {
+    margin-bottom: 18px;
+
+    color: var(--dark-muted);
+
+    font-size: 1rem;
+
+    line-height: 1.85;
+}
+
+
+.services-detail-intro p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* =====================================================
+   DETAIL SERVICE LIST
+===================================================== */
+
+.services-detail-list {
+    border-top:
+        1px solid #D5DDE5;
+}
+
+
+.services-detail-item {
+    display: grid;
+
+    grid-template-columns:
+        70px
+        minmax(220px, 0.7fr)
+        minmax(0, 1.3fr);
+
+    gap: 40px;
+
+    align-items: start;
+
+    padding:
+        40px 0;
+
+    border-bottom:
+        1px solid #D5DDE5;
+}
+
+
+/* Number */
+
+.services-detail-number {
+    padding-top: 6px;
+
+    color: var(--primary);
+
+    font-size: 0.72rem;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+
+/* =====================================================
+   DETAIL TITLE
+===================================================== */
+
+.services-detail-title span {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: var(--dark-muted);
+
+    font-size: 0.7rem;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+}
+
+
+.services-detail-title h3 {
+    color: var(--dark-text);
+
+    font-size: 1.45rem;
+    font-weight: 700;
+
+    line-height: 1.3;
+}
+
+
+/* =====================================================
+   DETAIL CONTENT
+===================================================== */
+
+.services-detail-content p {
+    max-width: 650px;
+
+    margin-bottom: 18px;
+
+    color: var(--dark-muted);
+
+    font-size: 0.98rem;
+
+    line-height: 1.85;
+}
+
+
+/* Small capability line */
+
+.services-detail-meta {
+    max-width: 650px;
+
+    color: var(--primary);
+
+    font-size: 0.72rem;
+    font-weight: 700;
+
+    letter-spacing: 0.4px;
+
+    line-height: 1.7;
+}
+
+
+/* =====================================================
+   DETAIL CLOSING STATEMENT
+===================================================== */
+
+.services-detail-statement {
+    display: grid;
+
+    grid-template-columns:
+        190px
+        minmax(0, 1fr);
+
+    gap: 50px;
+
+    align-items: start;
+
+    margin-top: 75px;
+
+    padding:
+        40px 0;
+
+    border-top:
+        1px solid #D5DDE5;
+
+    border-bottom:
+        1px solid #D5DDE5;
+}
+
+
+.services-detail-statement span {
+    padding-top: 6px;
+
+    color: var(--primary);
+
+    font-size: 0.72rem;
+    font-weight: 700;
+
+    letter-spacing: 3px;
+
+    text-transform: uppercase;
+}
+
+
+.services-detail-statement p {
+    max-width: 850px;
+
+    color: var(--dark-text);
+
+    font-size: 1.35rem;
+    font-weight: 600;
+
+    line-height: 1.6;
+}
+
+
+/* =====================================================
+   DETAILED ENGINEERING RESPONSIVE
+===================================================== */
+
+@media (max-width: 900px) {
+
+    .services-detail-header {
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+
+        margin-bottom: 55px;
+    }
+
+
+    .services-detail-heading h2 {
+        font-size: 2.6rem;
+    }
+
+
+    .services-detail-intro {
+        max-width: 700px;
+    }
+
+
+    .services-detail-item {
+        grid-template-columns:
+            55px
+            minmax(180px, 0.7fr)
+            minmax(0, 1.3fr);
+
+        gap: 25px;
+    }
+
+
+    .services-detail-statement {
+        grid-template-columns: 1fr;
+
+        gap: 18px;
+
+        margin-top: 60px;
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .services-detail-label {
+        margin-bottom: 20px;
+
+        font-size: 0.7rem;
+
+        letter-spacing: 3px;
+    }
+
+
+    .services-detail-heading h2 {
+        font-size: 2.15rem;
+
+        letter-spacing: -0.5px;
+    }
+
+
+    .services-detail-intro p {
+        font-size: 0.95rem;
+
+        line-height: 1.8;
+    }
+
+
+    .services-detail-item {
+        grid-template-columns:
+            42px 1fr;
+
+        gap:
+            15px 20px;
+
+        padding:
+            32px 0;
+    }
+
+
+    .services-detail-number {
+        grid-row:
+            1 / 3;
+    }
+
+
+    .services-detail-title {
+        grid-column: 2;
+    }
+
+
+    .services-detail-content {
+        grid-column: 2;
+    }
+
+
+    .services-detail-title h3 {
+        font-size: 1.3rem;
+    }
+
+
+    .services-detail-content p {
+        font-size: 0.95rem;
+    }
+
+
+    .services-detail-meta {
+        font-size: 0.68rem;
+    }
+
+
+    .services-detail-statement {
+        padding:
+            35px 0;
+    }
+
+
+    .services-detail-statement p {
+        font-size: 1.15rem;
+    }
+
+}
