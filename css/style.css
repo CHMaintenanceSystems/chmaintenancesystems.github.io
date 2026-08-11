@@ -1636,3 +1636,45 @@ FAQ
     line-height:1.9;
 
 }
+
+/* =====================================================
+   CONTACT PAGE RESPONSIVE
+===================================================== */
+
+@media (max-width: 900px) {
+
+    .process-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-details {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-form {
+        margin-top: 50px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .process-step {
+        padding: 30px;
+    }
+
+    .contact-card {
+        padding: 30px;
+    }
+
+    .contact-form {
+        margin-top: 40px;
+        gap: 20px;
+    }
+
+    .contact-form textarea {
+        min-height: 180px;
+    }
+
+}
