@@ -6146,3 +6146,309 @@ FAQ
 .services-software {
     position: relative;
 }
+
+/* =====================================================
+   SERVICES PAGE - HOW WE WORK
+===================================================== */
+
+.services-work {
+    position: relative;
+}
+
+
+/* =====================================================
+   SECTION HEADER
+===================================================== */
+
+.services-work-header {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1.1fr)
+        minmax(0, 0.9fr);
+
+    gap: 110px;
+
+    align-items: end;
+
+    margin-bottom: 75px;
+}
+
+
+.services-work-heading {
+    max-width: 720px;
+}
+
+
+.services-work-label {
+    display: inline-block;
+
+    margin-bottom: 24px;
+
+    color: var(--primary-light);
+
+    font-size: 0.78rem;
+    font-weight: 700;
+
+    letter-spacing: 4px;
+
+    text-transform: uppercase;
+}
+
+
+.services-work-heading h2 {
+    color: var(--text);
+
+    font-size: 3rem;
+    font-weight: 700;
+
+    line-height: 1.15;
+
+    letter-spacing: -1px;
+}
+
+
+.services-work-intro {
+    max-width: 540px;
+}
+
+
+.services-work-intro p {
+    color: var(--text-light);
+
+    font-size: 1.05rem;
+
+    line-height: 1.9;
+}
+
+
+/* =====================================================
+   PROCESS GRID
+===================================================== */
+
+.services-work-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    border-top:
+        1px solid var(--border);
+
+    border-bottom:
+        1px solid var(--border);
+}
+
+
+.services-work-step {
+    display: flex;
+
+    flex-direction: column;
+
+    min-height: 390px;
+
+    padding:
+        40px 32px 35px;
+}
+
+
+.services-work-step + .services-work-step {
+    border-left:
+        1px solid var(--border);
+}
+
+
+/* Number */
+
+.services-work-number {
+    margin-bottom: 25px;
+
+    color: var(--primary-light);
+
+    font-size: 0.72rem;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+
+/* Small stage label */
+
+.services-work-stage {
+    display: block;
+
+    margin-bottom: 12px;
+
+    color: var(--text-muted);
+
+    font-size: 0.7rem;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+}
+
+
+/* Heading */
+
+.services-work-step h3 {
+    margin-bottom: 20px;
+
+    color: var(--text);
+
+    font-size: 1.45rem;
+    font-weight: 700;
+
+    line-height: 1.35;
+}
+
+
+/* Description */
+
+.services-work-step p {
+    margin-bottom: 35px;
+
+    color: var(--text-light);
+
+    font-size: 0.94rem;
+
+    line-height: 1.8;
+}
+
+
+/* Outcome */
+
+.services-work-result {
+    margin-top: auto;
+
+    padding-top: 20px;
+
+    border-top:
+        1px solid var(--border);
+
+    color: var(--primary-light);
+
+    font-size: 0.72rem;
+    font-weight: 700;
+
+    letter-spacing: 0.8px;
+
+    text-transform: uppercase;
+}
+
+
+/* =====================================================
+   SERVICES HOW WE WORK RESPONSIVE
+===================================================== */
+
+@media (max-width: 1000px) {
+
+    .services-work-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+
+    .services-work-step:nth-child(3) {
+        border-left: none;
+
+        border-top:
+            1px solid var(--border);
+    }
+
+
+    .services-work-step:nth-child(4) {
+        border-top:
+            1px solid var(--border);
+    }
+
+}
+
+
+@media (max-width: 900px) {
+
+    .services-work-header {
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+
+        margin-bottom: 55px;
+    }
+
+
+    .services-work-heading h2 {
+        font-size: 2.6rem;
+    }
+
+
+    .services-work-intro {
+        max-width: 700px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .services-work-label {
+        margin-bottom: 20px;
+
+        font-size: 0.7rem;
+
+        letter-spacing: 3px;
+    }
+
+
+    .services-work-heading h2 {
+        font-size: 2.15rem;
+
+        letter-spacing: -0.5px;
+    }
+
+
+    .services-work-intro p {
+        font-size: 1rem;
+
+        line-height: 1.8;
+    }
+
+
+    .services-work-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .services-work-step {
+        min-height: auto;
+
+        padding:
+            35px 0;
+    }
+
+
+    .services-work-step + .services-work-step,
+    .services-work-step:nth-child(3),
+    .services-work-step:nth-child(4) {
+        border-left: none;
+
+        border-top:
+            1px solid var(--border);
+    }
+
+
+    .services-work-step h3 {
+        font-size: 1.3rem;
+    }
+
+
+    .services-work-step p {
+        font-size: 0.95rem;
+    }
+
+
+    .services-work-result {
+        margin-top: 0;
+    }
+
+}
