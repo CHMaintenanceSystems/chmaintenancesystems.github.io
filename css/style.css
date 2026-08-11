@@ -4137,3 +4137,234 @@ FAQ
     }
 
 }
+
+/* =====================================================
+   ABOUT PAGE - VALUES
+===================================================== */
+
+.about-values {
+    position: relative;
+}
+
+
+/* =====================================================
+   SECTION HEADER
+===================================================== */
+
+.about-values-header {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1.1fr)
+        minmax(0, 0.9fr);
+
+    gap: 110px;
+
+    align-items: end;
+
+    margin-bottom: 75px;
+}
+
+
+.about-values-heading {
+    max-width: 700px;
+}
+
+
+.about-values-label {
+    display: inline-block;
+
+    margin-bottom: 24px;
+
+    color: var(--primary-light);
+
+    font-size: 0.78rem;
+    font-weight: 700;
+
+    letter-spacing: 4px;
+
+    text-transform: uppercase;
+}
+
+
+.about-values-heading h2 {
+    color: var(--text);
+
+    font-size: 3rem;
+    font-weight: 700;
+
+    line-height: 1.15;
+
+    letter-spacing: -1px;
+}
+
+
+.about-values-intro {
+    max-width: 540px;
+}
+
+
+.about-values-intro p {
+    color: var(--text-light);
+
+    font-size: 1.05rem;
+
+    line-height: 1.9;
+}
+
+
+/* =====================================================
+   VALUES GRID
+===================================================== */
+
+.about-values-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    border-top:
+        1px solid var(--border);
+
+    border-left:
+        1px solid var(--border);
+}
+
+
+/* Individual value */
+
+.about-value {
+    min-height: 280px;
+
+    padding: 42px 45px;
+
+    border-right:
+        1px solid var(--border);
+
+    border-bottom:
+        1px solid var(--border);
+}
+
+
+/* Number */
+
+.about-value-number {
+    margin-bottom: 28px;
+
+    color: var(--primary-light);
+
+    font-size: 0.72rem;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+
+/* Heading */
+
+.about-value h3 {
+    margin-bottom: 18px;
+
+    color: var(--text);
+
+    font-size: 1.55rem;
+    font-weight: 700;
+
+    line-height: 1.3;
+}
+
+
+/* Text */
+
+.about-value p {
+    max-width: 520px;
+
+    color: var(--text-light);
+
+    font-size: 0.96rem;
+
+    line-height: 1.85;
+}
+
+
+/* =====================================================
+   VALUES RESPONSIVE
+===================================================== */
+
+@media (max-width: 900px) {
+
+    .about-values-header {
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+
+        margin-bottom: 55px;
+    }
+
+
+    .about-values-heading h2 {
+        font-size: 2.6rem;
+    }
+
+
+    .about-values-intro {
+        max-width: 700px;
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .about-values-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .about-value {
+        min-height: auto;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .about-values-label {
+        margin-bottom: 20px;
+
+        font-size: 0.7rem;
+
+        letter-spacing: 3px;
+    }
+
+
+    .about-values-heading h2 {
+        font-size: 2.15rem;
+
+        letter-spacing: -0.5px;
+    }
+
+
+    .about-values-intro p {
+        font-size: 1rem;
+
+        line-height: 1.8;
+    }
+
+
+    .about-value {
+        padding: 35px 28px;
+    }
+
+
+    .about-value h3 {
+        font-size: 1.35rem;
+    }
+
+
+    .about-value p {
+        font-size: 0.95rem;
+    }
+
+}
