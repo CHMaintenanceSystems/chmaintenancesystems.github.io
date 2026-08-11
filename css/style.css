@@ -853,13 +853,9 @@ nav ul a:hover::after {
     color: var(--dark-muted);
 }
 
-/*=====================================================
-SERVICES PAGE
-=====================================================*/
-
-/*-----------------------------------------------------
-PAGE HEADER
------------------------------------------------------*/
+/* =====================================================
+   SHARED PAGE HERO
+===================================================== */
 
 .page-hero{
 
@@ -1197,36 +1193,46 @@ CALL TO ACTION
 
 }
 
-/*-----------------------------------------------------
+/*=====================================================
 RESPONSIVE
------------------------------------------------------*/
+=====================================================*/
 
-@media(max-width:900px){
+@media (max-width: 900px) {
 
-    .page-hero{
+    .page-hero {
+        min-height: auto;
 
-        min-height:auto;
-
-        padding:140px 20px 70px;
-
+        padding: 90px 20px 70px;
     }
 
-    .page-hero h1{
-
-        font-size:2.8rem;
-
+    .page-hero h1 {
+        font-size: 2.8rem;
     }
 
     .pillars-grid,
-
-    .service-grid{
-
-        grid-template-columns:1fr;
-
+    .service-grid {
+        grid-template-columns: 1fr;
     }
 
 }
 
+
+@media (max-width: 600px) {
+
+    .page-hero {
+        padding: 75px 20px 60px;
+    }
+
+    .page-hero h1 {
+        font-size: 2.3rem;
+    }
+
+    .page-hero p {
+        font-size: 1.05rem;
+        line-height: 1.7;
+    }
+
+}
 /*=====================================================
 FOOTER
 =====================================================*/
@@ -1371,63 +1377,169 @@ FOOTER
 CONTACT PAGE
 =====================================================*/
 
-/*-----------------------------------------------------
-PAGE HEADER
------------------------------------------------------*/
+/* =====================================================
+   16. RESPONSIVE
+===================================================== */
 
-.page-hero{
+@media (max-width: 900px) {
 
-    min-height:70vh;
+    /* Grids */
 
-    display:flex;
+    .grid-2,
+    .grid-3,
+    .grid-4 {
+        grid-template-columns: 1fr;
+    }
 
-    justify-content:center;
 
-    align-items:center;
+    /* Navigation */
 
-    padding:140px 20px 80px;
+    nav {
+        position: relative;
 
-    background:linear-gradient(
-        180deg,
-        var(--background),
-        var(--surface)
-    );
+        flex-direction: column;
 
-    text-align:center;
+        padding: 20px;
+
+        gap: 20px;
+    }
+
+    .logo img {
+        height: 60px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+
+        gap: 18px 28px;
+    }
+
+
+    /* Hero */
+
+    .hero {
+        min-height: auto;
+
+        padding: 100px 20px;
+    }
+
+    .hero h1 {
+        font-size: 2.8rem;
+    }
+
+    .hero p {
+        font-size: 1.1rem;
+    }
+
+
+    /* Sections */
+
+    .section {
+        padding: 80px 0;
+    }
+
+    .section-title {
+        font-size: 2.4rem;
+    }
+
+
+    /* CTA */
+
+    .cta {
+        padding: 60px 30px;
+    }
 
 }
 
-.page-hero .container{
 
-    max-width:900px;
+@media (max-width: 600px) {
 
-    margin:auto;
+    /* Navigation */
 
-}
+    nav {
+        padding: 18px 20px;
+    }
 
-.page-hero h1{
+    .logo img {
+        height: 55px;
+    }
 
-    font-size:4rem;
+    nav ul {
+        gap: 14px 20px;
+    }
 
-    font-weight:800;
+    nav a {
+        font-size: 0.9rem;
+    }
 
-    line-height:1.1;
 
-    margin-bottom:30px;
+    /* Hero */
 
-}
+    .hero {
+        padding: 80px 20px;
+    }
 
-.page-hero p{
+    .hero h1 {
+        font-size: 2.2rem;
+    }
 
-    max-width:750px;
+    .hero p {
+        font-size: 1rem;
+        line-height: 1.7;
+    }
 
-    margin:0 auto 45px;
 
-    font-size:1.2rem;
+    /* Buttons */
 
-    line-height:1.9;
+    .buttons {
+        flex-direction: column;
+        align-items: stretch;
 
-    color:var(--text-muted);
+        width: 100%;
+    }
+
+    .btn,
+    .btn-outline {
+        width: 100%;
+
+        text-align: center;
+    }
+
+
+    /* Sections */
+
+    .section {
+        padding: 70px 0;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .section-subtitle {
+        font-size: 1.05rem;
+
+        margin-bottom: 45px;
+    }
+
+
+    /* Cards */
+
+    .feature-card {
+        padding: 30px;
+    }
+
+
+    /* CTA */
+
+    .cta {
+        padding: 50px 25px;
+    }
+
+    .cta h2 {
+        font-size: 2rem;
+    }
 
 }
 
