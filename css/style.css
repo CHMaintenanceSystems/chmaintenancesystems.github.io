@@ -3856,3 +3856,284 @@ FAQ
     }
 
 }
+
+/* =====================================================
+   ABOUT PAGE - BUILDING WHAT COMES NEXT
+===================================================== */
+
+.about-future {
+    position: relative;
+}
+
+
+/* =====================================================
+   MAIN LAYOUT
+===================================================== */
+
+.about-future-grid {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 0.9fr)
+        minmax(0, 1.1fr);
+
+    gap: 120px;
+
+    align-items: start;
+}
+
+
+/* =====================================================
+   FUTURE HEADING
+===================================================== */
+
+.about-future-heading {
+    max-width: 580px;
+}
+
+
+.about-future-label {
+    display: inline-block;
+
+    margin-bottom: 24px;
+
+    color: var(--primary);
+
+    font-size: 0.78rem;
+    font-weight: 700;
+
+    letter-spacing: 4px;
+
+    text-transform: uppercase;
+}
+
+
+.about-future-heading h2 {
+    margin-bottom: 30px;
+
+    color: var(--dark-text);
+
+    font-size: 3rem;
+    font-weight: 700;
+
+    line-height: 1.15;
+
+    letter-spacing: -1px;
+}
+
+
+.about-future-heading > p {
+    max-width: 550px;
+
+    color: var(--dark-muted);
+
+    font-size: 1.05rem;
+
+    line-height: 1.9;
+}
+
+
+/* =====================================================
+   FUTURE CONTENT
+===================================================== */
+
+.about-future-content {
+    border-top:
+        1px solid #D5DDE5;
+}
+
+
+.about-future-block {
+    display: grid;
+
+    grid-template-columns:
+        55px 1fr;
+
+    gap: 25px;
+
+    padding: 34px 0;
+
+    border-bottom:
+        1px solid #D5DDE5;
+}
+
+
+.about-future-number {
+    padding-top: 4px;
+
+    color: var(--primary);
+
+    font-size: 0.72rem;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+
+.about-future-block h3 {
+    margin-bottom: 12px;
+
+    color: var(--dark-text);
+
+    font-size: 1.4rem;
+    font-weight: 700;
+
+    line-height: 1.3;
+}
+
+
+.about-future-block p {
+    max-width: 620px;
+
+    color: var(--dark-muted);
+
+    font-size: 0.98rem;
+
+    line-height: 1.85;
+}
+
+
+/* =====================================================
+   FUTURE CLOSING STATEMENT
+===================================================== */
+
+.about-future-statement {
+    display: grid;
+
+    grid-template-columns:
+        180px
+        minmax(0, 1fr);
+
+    gap: 50px;
+
+    align-items: start;
+
+    margin-top: 80px;
+
+    padding:
+        45px 0;
+
+    border-top:
+        1px solid #D5DDE5;
+
+    border-bottom:
+        1px solid #D5DDE5;
+}
+
+
+.about-future-statement span {
+    padding-top: 6px;
+
+    color: var(--primary);
+
+    font-size: 0.72rem;
+    font-weight: 700;
+
+    letter-spacing: 3px;
+
+    text-transform: uppercase;
+}
+
+
+.about-future-statement p {
+    max-width: 850px;
+
+    color: var(--dark-text);
+
+    font-size: 1.45rem;
+    font-weight: 600;
+
+    line-height: 1.6;
+}
+
+
+/* =====================================================
+   BUILDING WHAT COMES NEXT RESPONSIVE
+===================================================== */
+
+@media (max-width: 900px) {
+
+    .about-future-grid {
+        grid-template-columns: 1fr;
+
+        gap: 55px;
+    }
+
+
+    .about-future-heading {
+        max-width: 700px;
+    }
+
+
+    .about-future-heading h2 {
+        font-size: 2.6rem;
+    }
+
+
+    .about-future-statement {
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+
+        margin-top: 60px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .about-future-label {
+        margin-bottom: 20px;
+
+        font-size: 0.7rem;
+
+        letter-spacing: 3px;
+    }
+
+
+    .about-future-heading h2 {
+        font-size: 2.15rem;
+
+        letter-spacing: -0.5px;
+    }
+
+
+    .about-future-heading > p {
+        font-size: 1rem;
+
+        line-height: 1.8;
+    }
+
+
+    .about-future-block {
+        grid-template-columns:
+            42px 1fr;
+
+        gap: 18px;
+
+        padding: 30px 0;
+    }
+
+
+    .about-future-block h3 {
+        font-size: 1.25rem;
+    }
+
+
+    .about-future-block p {
+        font-size: 0.95rem;
+    }
+
+
+    .about-future-statement {
+        padding:
+            35px 0;
+    }
+
+
+    .about-future-statement p {
+        font-size: 1.2rem;
+    }
+
+}
