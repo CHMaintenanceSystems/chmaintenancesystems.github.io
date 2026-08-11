@@ -6037,3 +6037,104 @@ FAQ
     }
 
 }
+
+/* =====================================================
+   SERVICES PAGE - MAINTENANCE SYSTEMS
+===================================================== */
+
+.services-maintenance {
+    position: relative;
+}
+
+
+/* =====================================================
+   DARK DETAIL HEADER
+===================================================== */
+
+.services-maintenance .services-detail-label {
+    color: var(--primary-light);
+}
+
+
+.services-maintenance .services-detail-heading h2 {
+    color: var(--text);
+}
+
+
+.services-maintenance .services-detail-intro p {
+    color: var(--text-light);
+}
+
+
+/* =====================================================
+   DARK DETAIL LIST
+===================================================== */
+
+.services-maintenance .services-detail-list {
+    border-top:
+        1px solid var(--border);
+}
+
+
+.services-maintenance .services-detail-item {
+    border-bottom:
+        1px solid var(--border);
+}
+
+
+/* Number */
+
+.services-maintenance .services-detail-number {
+    color: var(--primary-light);
+}
+
+
+/* Category */
+
+.services-maintenance .services-detail-title span {
+    color: var(--text-muted);
+}
+
+
+/* Heading */
+
+.services-maintenance .services-detail-title h3 {
+    color: var(--text);
+}
+
+
+/* Description */
+
+.services-maintenance .services-detail-content p {
+    color: var(--text-light);
+}
+
+
+/* Capability line */
+
+.services-maintenance .services-detail-meta {
+    color: var(--primary-light);
+}
+
+
+/* =====================================================
+   DARK CLOSING STATEMENT
+===================================================== */
+
+.services-maintenance .services-detail-statement {
+    border-top:
+        1px solid var(--border);
+
+    border-bottom:
+        1px solid var(--border);
+}
+
+
+.services-maintenance .services-detail-statement span {
+    color: var(--primary-light);
+}
+
+
+.services-maintenance .services-detail-statement p {
+    color: var(--text);
+}
