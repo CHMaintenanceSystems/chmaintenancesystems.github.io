@@ -162,72 +162,99 @@ body {
 ===================================================== */
 
 nav {
-
     position: fixed;
-
     top: 0;
-
     left: 0;
 
     width: 100%;
 
     display: flex;
-
     justify-content: space-between;
-
     align-items: center;
 
-    padding: 20px 60px;
+    padding: 18px 60px;
 
-    background:
-        rgba(7,24,39,0.95);
+    background: rgba(7, 24, 39, 0.96);
 
     backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+
+    border-bottom: 1px solid var(--border);
 
     z-index: 1000;
-
 }
 
+
+/* Logo */
+
+.logo {
+    display: flex;
+    align-items: center;
+}
 
 .logo img {
+    display: block;
 
     height: 70px;
-
     width: auto;
-
 }
 
 
-nav ul {
+/* Navigation links */
 
+nav ul {
     display: flex;
+    align-items: center;
 
     gap: 40px;
 
     list-style: none;
-
 }
 
+nav li {
+    display: flex;
+    align-items: center;
+}
 
 nav a {
+    position: relative;
 
     color: var(--text);
 
     text-decoration: none;
 
+    font-size: 0.95rem;
     font-weight: 600;
 
     transition: var(--transition);
-
 }
-
 
 nav a:hover {
-
     color: var(--primary-light);
-
 }
 
+
+/* Navigation underline */
+
+nav ul a::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: -8px;
+
+    width: 0;
+    height: 2px;
+
+    background: var(--primary);
+
+    transition: var(--transition);
+}
+
+nav ul a:hover::after {
+    width: 100%;
+}
 
 /* =====================================================
    7. HERO
