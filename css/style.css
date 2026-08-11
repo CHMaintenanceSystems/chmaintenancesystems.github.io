@@ -256,63 +256,261 @@ nav ul a:hover::after {
     width: 100%;
 }
 
-<!-- =====================================================
-     HERO
-===================================================== -->
+/* =====================================================
+   7. HERO
+===================================================== */
 
-<header class="hero">
+.hero {
 
-    <div class="hero-content">
+    min-height: 100vh;
 
-        <div class="hero-label">
-            Engineering · Systems · Innovation
-        </div>
+    display: flex;
 
-        <h1>
-            Industrial Reliability &amp;
-            Maintenance Solutions
-        </h1>
+    justify-content: center;
+    align-items: center;
 
-        <p class="hero-description">
-            Helping manufacturers reduce downtime through engineering consultancy,
-            maintenance systems and intelligent software.
-        </p>
+    text-align: center;
 
-        <div class="buttons">
+    padding: 150px 20px 80px;
 
-            <a href="contact.html" class="btn">
-                Book a Consultation
-            </a>
+    background:
+        radial-gradient(
+            circle at 50% 45%,
+            rgba(11, 78, 162, 0.12),
+            transparent 42%
+        ),
+        linear-gradient(
+            180deg,
+            var(--background),
+            var(--surface)
+        );
 
-            <a href="services.html" class="btn-outline">
-                Explore Services
-            </a>
-
-        </div>
+}
 
 
-        <div class="hero-capabilities">
+/* Hero content */
 
-            <div class="hero-capability">
-                <span class="hero-capability-number">01</span>
-                <span>Engineering Support</span>
-            </div>
+.hero-content {
 
-            <div class="hero-capability">
-                <span class="hero-capability-number">02</span>
-                <span>Maintenance Systems</span>
-            </div>
+    width: 100%;
+    max-width: 1000px;
 
-            <div class="hero-capability">
-                <span class="hero-capability-number">03</span>
-                <span>Engineering Software</span>
-            </div>
+    margin: auto;
 
-        </div>
+}
 
-    </div>
 
-</header>
+/* Small company descriptor */
+
+.hero-label {
+
+    display: inline-block;
+
+    margin-bottom: 28px;
+
+    color: var(--primary-light);
+
+    font-size: 0.78rem;
+    font-weight: 700;
+
+    letter-spacing: 4px;
+
+    text-transform: uppercase;
+
+}
+
+
+/* Main heading */
+
+.hero h1 {
+
+    max-width: 900px;
+
+    margin:
+        0 auto 30px;
+
+    font-size: 4rem;
+    font-weight: 800;
+
+    line-height: 1.1;
+
+    letter-spacing: -1.5px;
+
+}
+
+
+/* Hero paragraph */
+
+.hero-description {
+
+    max-width: 780px;
+
+    margin:
+        0 auto 40px;
+
+    font-size: 1.25rem;
+
+    line-height: 1.8;
+
+    color: var(--text-light);
+
+}
+
+
+/* =====================================================
+   HERO CAPABILITIES
+===================================================== */
+
+.hero-capabilities {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    max-width: 900px;
+
+    margin:
+        65px auto 0;
+
+    padding-top: 30px;
+
+    border-top:
+        1px solid var(--border);
+
+}
+
+
+.hero-capability {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 8px;
+
+    padding: 0 25px;
+
+    color: var(--text-light);
+
+    font-size: 0.9rem;
+    font-weight: 600;
+
+    letter-spacing: 0.5px;
+
+}
+
+
+/* Vertical separators */
+
+.hero-capability + .hero-capability {
+
+    border-left:
+        1px solid var(--border);
+
+}
+
+
+/* Capability number */
+
+.hero-capability-number {
+
+    color: var(--primary-light);
+
+    font-size: 0.7rem;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+}
+
+
+/* =====================================================
+   HERO RESPONSIVE
+===================================================== */
+
+@media (max-width: 900px) {
+
+    .hero-label {
+
+        margin-bottom: 24px;
+
+        letter-spacing: 3px;
+
+    }
+
+
+    .hero-capabilities {
+
+        margin-top: 55px;
+
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .hero-label {
+
+        font-size: 0.7rem;
+
+        letter-spacing: 2.5px;
+
+        line-height: 1.6;
+
+    }
+
+
+    .hero h1 {
+
+        letter-spacing: -0.5px;
+
+    }
+
+
+    .hero-capabilities {
+
+        grid-template-columns: 1fr;
+
+        gap: 0;
+
+        margin-top: 50px;
+
+        padding-top: 0;
+
+        border-top: none;
+
+    }
+
+
+    .hero-capability {
+
+        padding: 18px 0;
+
+        border-top:
+            1px solid var(--border);
+
+    }
+
+
+    .hero-capability + .hero-capability {
+
+        border-left: none;
+
+    }
+
+
+    .hero-capability:last-child {
+
+        border-bottom:
+            1px solid var(--border);
+
+    }
+
+}
 
 /* =====================================================
    8. BUTTONS
