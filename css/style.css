@@ -1992,7 +1992,7 @@ FAQ
 
     color: var(--text);
 
-    font-size: 1.2rem;
+    font-size: 1.25rem;
     font-weight: 700;
 }
 
@@ -2002,7 +2002,7 @@ FAQ
 .home-intro-item p {
     max-width: 520px;
 
-    color: var(--text-muted);
+    color: var(--text-light);
 
     font-size: 0.95rem;
 
