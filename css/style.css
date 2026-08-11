@@ -6703,3 +6703,271 @@ FAQ
     }
 
 }
+
+/* =====================================================
+   CONTACT PAGE - HERO
+===================================================== */
+
+.contact-page-hero {
+    min-height: 82vh;
+
+    display: flex;
+    align-items: center;
+
+    padding: 170px 0 105px;
+
+    background:
+        radial-gradient(
+            circle at 28% 45%,
+            rgba(11, 78, 162, 0.11),
+            transparent 38%
+        ),
+        linear-gradient(
+            180deg,
+            var(--background),
+            var(--surface)
+        );
+
+    color: var(--text);
+}
+
+
+/* =====================================================
+   HERO LAYOUT
+===================================================== */
+
+.contact-hero-grid {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1.15fr)
+        minmax(0, 0.85fr);
+
+    gap: 110px;
+
+    align-items: center;
+}
+
+
+/* =====================================================
+   HERO CONTENT
+===================================================== */
+
+.contact-hero-content {
+    max-width: 740px;
+}
+
+
+.contact-hero-label {
+    display: inline-block;
+
+    margin-bottom: 28px;
+
+    color: var(--primary-light);
+
+    font-size: 0.78rem;
+    font-weight: 700;
+
+    letter-spacing: 4px;
+
+    text-transform: uppercase;
+}
+
+
+.contact-hero-content h1 {
+    margin-bottom: 32px;
+
+    color: var(--text);
+
+    font-size: 4rem;
+    font-weight: 800;
+
+    line-height: 1.08;
+
+    letter-spacing: -1.5px;
+}
+
+
+.contact-hero-content > p {
+    max-width: 690px;
+
+    margin-bottom: 40px;
+
+    color: var(--text-light);
+
+    font-size: 1.15rem;
+
+    line-height: 1.9;
+}
+
+
+/* =====================================================
+   HERO BUTTONS
+===================================================== */
+
+.contact-hero-buttons {
+    display: flex;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+}
+
+
+/* =====================================================
+   HERO PRINCIPLES
+===================================================== */
+
+.contact-hero-principles {
+    border-top:
+        1px solid var(--border);
+}
+
+
+.contact-hero-principle {
+    display: grid;
+
+    grid-template-columns:
+        45px 1fr;
+
+    gap: 22px;
+
+    padding: 28px 0;
+
+    border-bottom:
+        1px solid var(--border);
+}
+
+
+.contact-hero-number {
+    padding-top: 4px;
+
+    color: var(--primary-light);
+
+    font-size: 0.7rem;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+
+.contact-hero-principle h3 {
+    margin-bottom: 9px;
+
+    color: var(--text);
+
+    font-size: 1.18rem;
+    font-weight: 700;
+
+    line-height: 1.4;
+}
+
+
+.contact-hero-principle p {
+    color: var(--text-light);
+
+    font-size: 0.9rem;
+
+    line-height: 1.75;
+}
+
+
+/* =====================================================
+   CONTACT HERO RESPONSIVE
+===================================================== */
+
+@media (max-width: 900px) {
+
+    .contact-page-hero {
+        min-height: auto;
+
+        padding:
+            100px 0 90px;
+    }
+
+
+    .contact-hero-grid {
+        grid-template-columns: 1fr;
+
+        gap: 60px;
+    }
+
+
+    .contact-hero-content {
+        max-width: 760px;
+    }
+
+
+    .contact-hero-content h1 {
+        font-size: 3rem;
+    }
+
+
+    .contact-hero-principles {
+        max-width: 760px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .contact-page-hero {
+        padding:
+            75px 0 70px;
+    }
+
+
+    .contact-hero-label {
+        margin-bottom: 22px;
+
+        font-size: 0.7rem;
+
+        letter-spacing: 3px;
+    }
+
+
+    .contact-hero-content h1 {
+        margin-bottom: 26px;
+
+        font-size: 2.35rem;
+
+        letter-spacing: -0.5px;
+    }
+
+
+    .contact-hero-content > p {
+        font-size: 1rem;
+
+        line-height: 1.8;
+    }
+
+
+    .contact-hero-buttons {
+        flex-direction: column;
+    }
+
+
+    .contact-hero-buttons .btn,
+    .contact-hero-buttons .btn-outline {
+        width: 100%;
+
+        text-align: center;
+    }
+
+
+    .contact-hero-grid {
+        gap: 45px;
+    }
+
+
+    .contact-hero-principle {
+        grid-template-columns:
+            38px 1fr;
+
+        gap: 16px;
+
+        padding: 24px 0;
+    }
+
+}
