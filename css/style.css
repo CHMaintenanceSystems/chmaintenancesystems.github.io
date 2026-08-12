@@ -9597,3 +9597,393 @@ FAQ
     }
 
 }
+
+/* =====================================================
+   SOFTWARE PAGE - MAINTENANCE SOFTWARE
+===================================================== */
+
+.software-maintenance {
+    position: relative;
+}
+
+
+/* =====================================================
+   SECTION HEADER
+===================================================== */
+
+.software-maintenance-header {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1.05fr)
+        minmax(0, 0.95fr);
+
+    gap: 110px;
+
+    align-items: end;
+
+    margin-bottom: 75px;
+}
+
+
+.software-maintenance-heading {
+    max-width: 720px;
+}
+
+
+.software-maintenance-label {
+    display: inline-block;
+
+    margin-bottom: 24px;
+
+    color: var(--primary-light);
+
+    font-size: 0.78rem;
+    font-weight: 700;
+
+    letter-spacing: 4px;
+
+    text-transform: uppercase;
+}
+
+
+.software-maintenance-heading h2 {
+    color: var(--text);
+
+    font-size: 3rem;
+    font-weight: 700;
+
+    line-height: 1.15;
+
+    letter-spacing: -1px;
+}
+
+
+/* =====================================================
+   INTRODUCTION
+===================================================== */
+
+.software-maintenance-intro {
+    max-width: 560px;
+}
+
+
+.software-maintenance-intro p {
+    margin-bottom: 18px;
+
+    color: var(--text-light);
+
+    font-size: 1rem;
+
+    line-height: 1.9;
+}
+
+
+.software-maintenance-intro p:last-child {
+    margin-bottom: 0;
+}
+
+
+.software-maintenance-intro .software-maintenance-lead {
+    color: var(--text);
+
+    font-size: 1.15rem;
+    font-weight: 500;
+
+    line-height: 1.8;
+}
+
+
+/* =====================================================
+   CAPABILITY LIST
+===================================================== */
+
+.software-maintenance-capabilities {
+    border-top:
+        1px solid var(--border);
+}
+
+
+.software-maintenance-item {
+    display: grid;
+
+    grid-template-columns:
+        70px
+        minmax(220px, 0.7fr)
+        minmax(0, 1.3fr);
+
+    gap: 40px;
+
+    align-items: start;
+
+    padding:
+        38px 0;
+
+    border-bottom:
+        1px solid var(--border);
+}
+
+
+/* =====================================================
+   NUMBER
+===================================================== */
+
+.software-maintenance-number {
+    padding-top: 5px;
+
+    color: var(--primary-light);
+
+    font-size: 0.72rem;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+
+/* =====================================================
+   TITLE
+===================================================== */
+
+.software-maintenance-title > span {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: var(--text-muted);
+
+    font-size: 0.68rem;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+}
+
+
+.software-maintenance-title h3 {
+    color: var(--text);
+
+    font-size: 1.4rem;
+    font-weight: 700;
+
+    line-height: 1.35;
+}
+
+
+/* =====================================================
+   CONTENT
+===================================================== */
+
+.software-maintenance-content p {
+    max-width: 650px;
+
+    margin-bottom: 17px;
+
+    color: var(--text-light);
+
+    font-size: 0.95rem;
+
+    line-height: 1.85;
+}
+
+
+/* Technical capability line */
+
+.software-maintenance-meta {
+    max-width: 680px;
+
+    color: var(--primary-light);
+
+    font-size: 0.7rem;
+    font-weight: 700;
+
+    letter-spacing: 0.4px;
+
+    line-height: 1.7;
+}
+
+
+/* =====================================================
+   CLOSING STATEMENT
+===================================================== */
+
+.software-maintenance-statement {
+    display: grid;
+
+    grid-template-columns:
+        170px
+        minmax(0, 1fr);
+
+    gap: 55px;
+
+    align-items: start;
+
+    margin-top: 75px;
+
+    padding:
+        40px 0;
+
+    border-top:
+        1px solid var(--border);
+
+    border-bottom:
+        1px solid var(--border);
+}
+
+
+.software-maintenance-statement span {
+    padding-top: 6px;
+
+    color: var(--primary-light);
+
+    font-size: 0.7rem;
+    font-weight: 700;
+
+    letter-spacing: 3px;
+
+    text-transform: uppercase;
+}
+
+
+.software-maintenance-statement p {
+    max-width: 850px;
+
+    color: var(--text);
+
+    font-size: 1.35rem;
+    font-weight: 600;
+
+    line-height: 1.6;
+}
+
+
+/* =====================================================
+   MAINTENANCE SOFTWARE RESPONSIVE
+===================================================== */
+
+@media (max-width: 900px) {
+
+    .software-maintenance-header {
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+
+        margin-bottom: 55px;
+    }
+
+
+    .software-maintenance-heading h2 {
+        font-size: 2.6rem;
+    }
+
+
+    .software-maintenance-intro {
+        max-width: 700px;
+    }
+
+
+    .software-maintenance-item {
+        grid-template-columns:
+            55px
+            minmax(180px, 0.7fr)
+            minmax(0, 1.3fr);
+
+        gap: 25px;
+    }
+
+
+    .software-maintenance-statement {
+        grid-template-columns: 1fr;
+
+        gap: 18px;
+
+        margin-top: 60px;
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .software-maintenance-label {
+        margin-bottom: 20px;
+
+        font-size: 0.7rem;
+
+        letter-spacing: 3px;
+    }
+
+
+    .software-maintenance-heading h2 {
+        font-size: 2.15rem;
+
+        letter-spacing: -0.5px;
+    }
+
+
+    .software-maintenance-intro .software-maintenance-lead {
+        font-size: 1.05rem;
+    }
+
+
+    .software-maintenance-intro p {
+        font-size: 0.95rem;
+
+        line-height: 1.8;
+    }
+
+
+    .software-maintenance-item {
+        grid-template-columns:
+            40px 1fr;
+
+        gap:
+            14px 18px;
+
+        padding:
+            30px 0;
+    }
+
+
+    .software-maintenance-number {
+        grid-row:
+            1 / 3;
+    }
+
+
+    .software-maintenance-title {
+        grid-column: 2;
+    }
+
+
+    .software-maintenance-content {
+        grid-column: 2;
+    }
+
+
+    .software-maintenance-title h3 {
+        font-size: 1.25rem;
+    }
+
+
+    .software-maintenance-content p {
+        font-size: 0.92rem;
+    }
+
+
+    .software-maintenance-meta {
+        font-size: 0.66rem;
+    }
+
+
+    .software-maintenance-statement {
+        padding:
+            35px 0;
+    }
+
+
+    .software-maintenance-statement p {
+        font-size: 1.15rem;
+    }
+
+}
