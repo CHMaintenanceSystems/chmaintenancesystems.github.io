@@ -9192,3 +9192,408 @@ FAQ
     }
 
 }
+
+/* =====================================================
+   SOFTWARE PAGE - CORE CAPABILITIES
+===================================================== */
+
+.software-capabilities {
+    position: relative;
+}
+
+
+/* =====================================================
+   SECTION HEADER
+===================================================== */
+
+.software-capabilities-header {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1.15fr)
+        minmax(0, 0.85fr);
+
+    gap: 100px;
+
+    align-items: end;
+
+    margin-bottom: 70px;
+}
+
+
+.software-capabilities-heading {
+    max-width: 720px;
+}
+
+
+.software-capabilities-label {
+    display: inline-block;
+
+    margin-bottom: 24px;
+
+    color: var(--primary);
+
+    font-size: 0.78rem;
+    font-weight: 700;
+
+    letter-spacing: 4px;
+
+    text-transform: uppercase;
+}
+
+
+.software-capabilities-heading h2 {
+    color: var(--dark-text);
+
+    font-size: 3rem;
+    font-weight: 700;
+
+    line-height: 1.15;
+
+    letter-spacing: -1px;
+}
+
+
+.software-capabilities-intro {
+    max-width: 540px;
+}
+
+
+.software-capabilities-intro p {
+    color: var(--dark-muted);
+
+    font-size: 1.05rem;
+
+    line-height: 1.9;
+}
+
+
+/* =====================================================
+   CAPABILITY GRID
+===================================================== */
+
+.software-capabilities-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(6, 1fr);
+
+    border-top:
+        1px solid #D5DDE5;
+
+    border-bottom:
+        1px solid #D5DDE5;
+}
+
+
+/* =====================================================
+   INDIVIDUAL CAPABILITY
+===================================================== */
+
+.software-capability {
+    display: flex;
+
+    flex-direction: column;
+
+    min-height: 360px;
+
+    padding:
+        38px 34px;
+}
+
+
+/* First two larger capability blocks */
+
+.software-capability:nth-child(1),
+.software-capability:nth-child(2) {
+    grid-column:
+        span 3;
+}
+
+
+/* Remaining three capability blocks */
+
+.software-capability:nth-child(3),
+.software-capability:nth-child(4),
+.software-capability:nth-child(5) {
+    grid-column:
+        span 2;
+
+    border-top:
+        1px solid #D5DDE5;
+}
+
+
+/* Vertical divider - first row */
+
+.software-capability:nth-child(2) {
+    border-left:
+        1px solid #D5DDE5;
+}
+
+
+/* Vertical dividers - second row */
+
+.software-capability:nth-child(4),
+.software-capability:nth-child(5) {
+    border-left:
+        1px solid #D5DDE5;
+}
+
+
+/* =====================================================
+   CAPABILITY NUMBER
+===================================================== */
+
+.software-capability-number {
+    display: block;
+
+    margin-bottom: 28px;
+
+    color: var(--primary);
+
+    font-size: 0.72rem;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+
+/* =====================================================
+   CAPABILITY HEADING
+===================================================== */
+
+.software-capability h3 {
+    max-width: 420px;
+
+    margin-bottom: 20px;
+
+    color: var(--dark-text);
+
+    font-size: 1.55rem;
+    font-weight: 700;
+
+    line-height: 1.3;
+}
+
+
+/* =====================================================
+   CAPABILITY TEXT
+===================================================== */
+
+.software-capability p {
+    max-width: 470px;
+
+    margin-bottom: 35px;
+
+    color: var(--dark-muted);
+
+    font-size: 0.94rem;
+
+    line-height: 1.8;
+}
+
+
+/* =====================================================
+   CAPABILITY LINK
+===================================================== */
+
+.software-capability > a {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-top: auto;
+
+    color: var(--primary);
+
+    font-size: 0.8rem;
+    font-weight: 700;
+
+    line-height: 1.5;
+
+    text-decoration: none;
+
+    transition:
+        var(--transition);
+}
+
+
+.software-capability > a span {
+    transition:
+        var(--transition);
+}
+
+
+.software-capability > a:hover {
+    color:
+        var(--primary-hover);
+}
+
+
+.software-capability > a:hover span {
+    transform:
+        translateX(5px);
+}
+
+
+/* =====================================================
+   SUBTLE HOVER TREATMENT
+===================================================== */
+
+.software-capability {
+    transition:
+        background var(--transition);
+}
+
+
+.software-capability:hover {
+    background:
+        rgba(11, 78, 162, 0.035);
+}
+
+
+/* =====================================================
+   SOFTWARE CAPABILITIES RESPONSIVE
+===================================================== */
+
+@media (max-width: 1000px) {
+
+    .software-capabilities-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+
+    .software-capability:nth-child(1),
+    .software-capability:nth-child(2),
+    .software-capability:nth-child(3),
+    .software-capability:nth-child(4) {
+        grid-column:
+            span 1;
+    }
+
+
+    .software-capability:nth-child(5) {
+        grid-column:
+            1 / -1;
+    }
+
+
+    .software-capability:nth-child(3) {
+        border-left: none;
+    }
+
+
+    .software-capability:nth-child(3),
+    .software-capability:nth-child(4),
+    .software-capability:nth-child(5) {
+        border-top:
+            1px solid #D5DDE5;
+    }
+
+
+    .software-capability:nth-child(4) {
+        border-left:
+            1px solid #D5DDE5;
+    }
+
+
+    .software-capability:nth-child(5) {
+        border-left: none;
+    }
+
+}
+
+
+@media (max-width: 900px) {
+
+    .software-capabilities-header {
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+
+        margin-bottom: 55px;
+    }
+
+
+    .software-capabilities-heading h2 {
+        font-size: 2.6rem;
+    }
+
+
+    .software-capabilities-intro {
+        max-width: 700px;
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .software-capabilities-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .software-capability:nth-child(1),
+    .software-capability:nth-child(2),
+    .software-capability:nth-child(3),
+    .software-capability:nth-child(4),
+    .software-capability:nth-child(5) {
+        grid-column:
+            auto;
+
+        min-height: auto;
+
+        padding:
+            34px 0;
+
+        border-left: none;
+    }
+
+
+    .software-capability:nth-child(2),
+    .software-capability:nth-child(3),
+    .software-capability:nth-child(4),
+    .software-capability:nth-child(5) {
+        border-top:
+            1px solid #D5DDE5;
+    }
+
+
+    .software-capabilities-label {
+        margin-bottom: 20px;
+
+        font-size: 0.7rem;
+
+        letter-spacing: 3px;
+    }
+
+
+    .software-capabilities-heading h2 {
+        font-size: 2.15rem;
+
+        letter-spacing: -0.5px;
+    }
+
+
+    .software-capabilities-intro p {
+        font-size: 1rem;
+
+        line-height: 1.8;
+    }
+
+
+    .software-capability h3 {
+        font-size: 1.4rem;
+    }
+
+
+    .software-capability p {
+        font-size: 0.95rem;
+    }
+
+}
