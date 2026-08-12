@@ -1022,37 +1022,503 @@
 
 </section>
 
-<!-- =====================================================
-     REPORTING
-===================================================== -->
+/* =====================================================
+   SOFTWARE PAGE - DIGITAL ACCESS
+===================================================== */
 
-<section id="reporting"
-         class="section section-dark software-reporting">
+.software-digital {
+    position: relative;
+}
 
-    <div class="container">
 
-        <div class="software-detail-header">
+/* =====================================================
+   SECTION HEADER
+===================================================== */
 
-            <span>
-                03 · Reporting
-            </span>
+.software-digital-header {
+    display: grid;
 
-            <h2>
-                Turn maintenance activity
-                into useful information.
-            </h2>
+    grid-template-columns:
+        minmax(0, 1.05fr)
+        minmax(0, 0.95fr);
 
-            <p>
-                Engineering reporting and dashboards can provide clearer
-                visibility of maintenance performance, equipment issues
-                and reliability priorities.
-            </p>
+    gap: 110px;
 
-        </div>
+    align-items: end;
 
-    </div>
+    margin-bottom: 75px;
+}
 
-</section>
+
+.software-digital-heading {
+    max-width: 720px;
+}
+
+
+.software-digital-label {
+    display: inline-block;
+
+    margin-bottom: 24px;
+
+    color: var(--primary);
+
+    font-size: 0.78rem;
+    font-weight: 700;
+
+    letter-spacing: 4px;
+
+    text-transform: uppercase;
+}
+
+
+.software-digital-heading h2 {
+    color: var(--dark-text);
+
+    font-size: 3rem;
+    font-weight: 700;
+
+    line-height: 1.15;
+
+    letter-spacing: -1px;
+}
+
+
+/* =====================================================
+   INTRODUCTION
+===================================================== */
+
+.software-digital-intro {
+    max-width: 560px;
+}
+
+
+.software-digital-intro p {
+    margin-bottom: 18px;
+
+    color: var(--dark-muted);
+
+    font-size: 1rem;
+
+    line-height: 1.9;
+}
+
+
+.software-digital-intro p:last-child {
+    margin-bottom: 0;
+}
+
+
+.software-digital-intro .software-digital-lead {
+    color: var(--dark-text);
+
+    font-size: 1.15rem;
+    font-weight: 500;
+
+    line-height: 1.8;
+}
+
+
+/* =====================================================
+   DIGITAL WORKFLOW
+===================================================== */
+
+.software-digital-flow {
+    display: grid;
+
+    grid-template-columns:
+        repeat(5, 1fr);
+
+    border-top:
+        1px solid #D5DDE5;
+
+    border-bottom:
+        1px solid #D5DDE5;
+}
+
+
+.software-digital-step {
+    min-height: 320px;
+
+    padding:
+        35px 28px;
+}
+
+
+.software-digital-step + .software-digital-step {
+    border-left:
+        1px solid #D5DDE5;
+}
+
+
+/* Number */
+
+.software-digital-number {
+    display: block;
+
+    margin-bottom: 22px;
+
+    color: var(--primary);
+
+    font-size: 0.7rem;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+
+/* Stage */
+
+.software-digital-stage {
+    display: block;
+
+    margin-bottom: 10px;
+
+    color: var(--dark-muted);
+
+    font-size: 0.68rem;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+}
+
+
+/* Heading */
+
+.software-digital-step h3 {
+    min-height: 70px;
+
+    margin-bottom: 18px;
+
+    color: var(--dark-text);
+
+    font-size: 1.25rem;
+    font-weight: 700;
+
+    line-height: 1.4;
+}
+
+
+/* Description */
+
+.software-digital-step p {
+    color: var(--dark-muted);
+
+    font-size: 0.88rem;
+
+    line-height: 1.75;
+}
+
+
+/* =====================================================
+   DIGITAL DETAILS
+===================================================== */
+
+.software-digital-details {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    margin-top: 75px;
+
+    border-top:
+        1px solid #D5DDE5;
+
+    border-bottom:
+        1px solid #D5DDE5;
+}
+
+
+.software-digital-detail {
+    padding:
+        42px 40px;
+}
+
+
+.software-digital-detail + .software-digital-detail {
+    border-left:
+        1px solid #D5DDE5;
+}
+
+
+.software-digital-detail-label {
+    display: block;
+
+    margin-bottom: 18px;
+
+    color: var(--primary);
+
+    font-size: 0.7rem;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+}
+
+
+.software-digital-detail h3 {
+    max-width: 500px;
+
+    margin-bottom: 20px;
+
+    color: var(--dark-text);
+
+    font-size: 1.55rem;
+    font-weight: 700;
+
+    line-height: 1.35;
+}
+
+
+.software-digital-detail p {
+    max-width: 520px;
+
+    margin-bottom: 22px;
+
+    color: var(--dark-muted);
+
+    font-size: 0.95rem;
+
+    line-height: 1.85;
+}
+
+
+.software-digital-meta {
+    color: var(--primary);
+
+    font-size: 0.7rem;
+    font-weight: 700;
+
+    letter-spacing: 0.3px;
+
+    line-height: 1.7;
+}
+
+
+/* =====================================================
+   CLOSING STATEMENT
+===================================================== */
+
+.software-digital-statement {
+    display: grid;
+
+    grid-template-columns:
+        180px
+        minmax(0, 1fr);
+
+    gap: 55px;
+
+    align-items: start;
+
+    margin-top: 75px;
+
+    padding:
+        40px 0;
+
+    border-top:
+        1px solid #D5DDE5;
+
+    border-bottom:
+        1px solid #D5DDE5;
+}
+
+
+.software-digital-statement span {
+    padding-top: 6px;
+
+    color: var(--primary);
+
+    font-size: 0.7rem;
+    font-weight: 700;
+
+    letter-spacing: 3px;
+
+    text-transform: uppercase;
+}
+
+
+.software-digital-statement p {
+    max-width: 850px;
+
+    color: var(--dark-text);
+
+    font-size: 1.35rem;
+    font-weight: 600;
+
+    line-height: 1.6;
+}
+
+
+/* =====================================================
+   DIGITAL ACCESS RESPONSIVE
+===================================================== */
+
+@media (max-width: 1100px) {
+
+    .software-digital-flow {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+
+    .software-digital-step {
+        min-height: auto;
+    }
+
+
+    .software-digital-step:nth-child(3),
+    .software-digital-step:nth-child(5) {
+        border-left: none;
+    }
+
+
+    .software-digital-step:nth-child(3),
+    .software-digital-step:nth-child(4),
+    .software-digital-step:nth-child(5) {
+        border-top:
+            1px solid #D5DDE5;
+    }
+
+
+    .software-digital-step:nth-child(5) {
+        grid-column:
+            1 / -1;
+    }
+
+}
+
+
+@media (max-width: 900px) {
+
+    .software-digital-header {
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+
+        margin-bottom: 55px;
+    }
+
+
+    .software-digital-heading h2 {
+        font-size: 2.6rem;
+    }
+
+
+    .software-digital-intro {
+        max-width: 700px;
+    }
+
+
+    .software-digital-details {
+        grid-template-columns: 1fr;
+    }
+
+
+    .software-digital-detail {
+        padding:
+            40px 0;
+    }
+
+
+    .software-digital-detail + .software-digital-detail {
+        border-left: none;
+
+        border-top:
+            1px solid #D5DDE5;
+    }
+
+
+    .software-digital-statement {
+        grid-template-columns: 1fr;
+
+        gap: 18px;
+
+        margin-top: 60px;
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .software-digital-label {
+        margin-bottom: 20px;
+
+        font-size: 0.7rem;
+
+        letter-spacing: 3px;
+    }
+
+
+    .software-digital-heading h2 {
+        font-size: 2.15rem;
+
+        letter-spacing: -0.5px;
+    }
+
+
+    .software-digital-intro .software-digital-lead {
+        font-size: 1.05rem;
+    }
+
+
+    .software-digital-intro p {
+        font-size: 0.95rem;
+
+        line-height: 1.8;
+    }
+
+
+    .software-digital-flow {
+        grid-template-columns: 1fr;
+    }
+
+
+    .software-digital-step {
+        padding:
+            30px 0;
+    }
+
+
+    .software-digital-step + .software-digital-step,
+    .software-digital-step:nth-child(3),
+    .software-digital-step:nth-child(4),
+    .software-digital-step:nth-child(5) {
+        grid-column: auto;
+
+        border-left: none;
+
+        border-top:
+            1px solid #D5DDE5;
+    }
+
+
+    .software-digital-step h3 {
+        min-height: auto;
+
+        font-size: 1.2rem;
+    }
+
+
+    .software-digital-detail h3 {
+        font-size: 1.35rem;
+    }
+
+
+    .software-digital-statement {
+        padding:
+            35px 0;
+    }
+
+
+    .software-digital-statement p {
+        font-size: 1.15rem;
+    }
+
+}
 
 
 <!-- =====================================================
