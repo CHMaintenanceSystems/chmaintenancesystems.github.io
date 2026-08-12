@@ -10485,3 +10485,415 @@ FAQ
     }
 
 }
+
+/* =====================================================
+   SOFTWARE PAGE - REPORTING & DASHBOARDS
+===================================================== */
+
+.software-reporting {
+    position: relative;
+}
+
+
+/* =====================================================
+   SECTION HEADER
+===================================================== */
+
+.software-reporting-header {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1.05fr)
+        minmax(0, 0.95fr);
+
+    gap: 110px;
+
+    align-items: end;
+
+    margin-bottom: 75px;
+}
+
+
+.software-reporting-heading {
+    max-width: 720px;
+}
+
+
+.software-reporting-label {
+    display: inline-block;
+
+    margin-bottom: 24px;
+
+    color: var(--primary-light);
+
+    font-size: 0.78rem;
+    font-weight: 700;
+
+    letter-spacing: 4px;
+
+    text-transform: uppercase;
+}
+
+
+.software-reporting-heading h2 {
+    color: var(--text);
+
+    font-size: 3rem;
+    font-weight: 700;
+
+    line-height: 1.15;
+
+    letter-spacing: -1px;
+}
+
+
+/* =====================================================
+   INTRODUCTION
+===================================================== */
+
+.software-reporting-intro {
+    max-width: 560px;
+}
+
+
+.software-reporting-intro p {
+    margin-bottom: 18px;
+
+    color: var(--text-light);
+
+    font-size: 1rem;
+
+    line-height: 1.9;
+}
+
+
+.software-reporting-intro p:last-child {
+    margin-bottom: 0;
+}
+
+
+.software-reporting-intro .software-reporting-lead {
+    color: var(--text);
+
+    font-size: 1.15rem;
+    font-weight: 500;
+
+    line-height: 1.8;
+}
+
+
+/* =====================================================
+   REPORTING GRID
+===================================================== */
+
+.software-reporting-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    border-top:
+        1px solid var(--border);
+
+    border-bottom:
+        1px solid var(--border);
+}
+
+
+.software-reporting-item {
+    min-height: 360px;
+
+    padding:
+        40px 38px;
+}
+
+
+/* Vertical lines */
+
+.software-reporting-item:nth-child(even) {
+    border-left:
+        1px solid var(--border);
+}
+
+
+/* Second row */
+
+.software-reporting-item:nth-child(3),
+.software-reporting-item:nth-child(4) {
+    border-top:
+        1px solid var(--border);
+}
+
+
+/* =====================================================
+   ITEM TOP
+===================================================== */
+
+.software-reporting-top {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: flex-start;
+
+    gap: 20px;
+
+    margin-bottom: 30px;
+}
+
+
+.software-reporting-number {
+    color: var(--primary-light);
+
+    font-size: 0.7rem;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+
+.software-reporting-type {
+    color: var(--text-muted);
+
+    font-size: 0.68rem;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    text-align: right;
+
+    text-transform: uppercase;
+}
+
+
+/* =====================================================
+   ITEM CONTENT
+===================================================== */
+
+.software-reporting-item h3 {
+    max-width: 480px;
+
+    margin-bottom: 20px;
+
+    color: var(--text);
+
+    font-size: 1.5rem;
+    font-weight: 700;
+
+    line-height: 1.35;
+}
+
+
+.software-reporting-item p {
+    max-width: 560px;
+
+    margin-bottom: 28px;
+
+    color: var(--text-light);
+
+    font-size: 0.94rem;
+
+    line-height: 1.85;
+}
+
+
+.software-reporting-meta {
+    color: var(--primary-light);
+
+    font-size: 0.7rem;
+    font-weight: 700;
+
+    letter-spacing: 0.3px;
+
+    line-height: 1.7;
+}
+
+
+/* =====================================================
+   REPORTING STATEMENT
+===================================================== */
+
+.software-reporting-statement {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1fr)
+        minmax(0, 0.8fr);
+
+    gap: 100px;
+
+    align-items: end;
+
+    margin-top: 75px;
+
+    padding:
+        40px 0;
+
+    border-top:
+        1px solid var(--border);
+
+    border-bottom:
+        1px solid var(--border);
+}
+
+
+.software-reporting-statement span {
+    display: block;
+
+    margin-bottom: 15px;
+
+    color: var(--primary-light);
+
+    font-size: 0.7rem;
+    font-weight: 700;
+
+    letter-spacing: 3px;
+
+    text-transform: uppercase;
+}
+
+
+.software-reporting-statement h3 {
+    max-width: 680px;
+
+    color: var(--text);
+
+    font-size: 1.65rem;
+    font-weight: 600;
+
+    line-height: 1.5;
+}
+
+
+.software-reporting-statement > p {
+    max-width: 520px;
+
+    color: var(--text-light);
+
+    font-size: 0.95rem;
+
+    line-height: 1.85;
+}
+
+
+/* =====================================================
+   REPORTING RESPONSIVE
+===================================================== */
+
+@media (max-width: 900px) {
+
+    .software-reporting-header {
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+
+        margin-bottom: 55px;
+    }
+
+
+    .software-reporting-heading h2 {
+        font-size: 2.6rem;
+    }
+
+
+    .software-reporting-intro {
+        max-width: 700px;
+    }
+
+
+    .software-reporting-statement {
+        grid-template-columns: 1fr;
+
+        gap: 25px;
+
+        margin-top: 60px;
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .software-reporting-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .software-reporting-item {
+        min-height: auto;
+
+        padding:
+            35px 0;
+    }
+
+
+    .software-reporting-item:nth-child(even) {
+        border-left: none;
+    }
+
+
+    .software-reporting-item:nth-child(2),
+    .software-reporting-item:nth-child(3),
+    .software-reporting-item:nth-child(4) {
+        border-top:
+            1px solid var(--border);
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .software-reporting-label {
+        margin-bottom: 20px;
+
+        font-size: 0.7rem;
+
+        letter-spacing: 3px;
+    }
+
+
+    .software-reporting-heading h2 {
+        font-size: 2.15rem;
+
+        letter-spacing: -0.5px;
+    }
+
+
+    .software-reporting-intro .software-reporting-lead {
+        font-size: 1.05rem;
+    }
+
+
+    .software-reporting-intro p {
+        font-size: 0.95rem;
+
+        line-height: 1.8;
+    }
+
+
+    .software-reporting-item h3 {
+        font-size: 1.3rem;
+    }
+
+
+    .software-reporting-item p {
+        font-size: 0.92rem;
+    }
+
+
+    .software-reporting-statement {
+        padding:
+            35px 0;
+    }
+
+
+    .software-reporting-statement h3 {
+        font-size: 1.35rem;
+    }
+
+
+    .software-reporting-statement > p {
+        font-size: 0.92rem;
+    }
+
+}
