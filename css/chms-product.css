@@ -972,3 +972,44 @@
         text-align: center;
     }
 }
+
+
+/* =====================================================
+   CHMS WEBSITE CONTACT DELIVERY
+===================================================== */
+
+.chms-contact-honeypot {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    overflow: hidden !important;
+    clip: rect(0 0 0 0) !important;
+    clip-path: inset(50%) !important;
+    white-space: nowrap !important;
+}
+
+.chms-contact-status {
+    flex-basis: 100%;
+    margin: 14px 0 0;
+    font-size: 0.92rem;
+    line-height: 1.6;
+}
+
+.chms-contact-status:empty {
+    display: none;
+}
+
+.chms-contact-status.is-success {
+    color: #2f8f68;
+    font-weight: 700;
+}
+
+.chms-contact-status.is-error {
+    color: #b84c4c;
+    font-weight: 700;
+}
+
+.contact-enquiry-form button[disabled] {
+    opacity: 0.65;
+    cursor: wait;
+}
