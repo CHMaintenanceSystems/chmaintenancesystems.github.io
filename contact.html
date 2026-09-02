@@ -819,8 +819,14 @@ NAVIGATION
 
                 <form class="contact-enquiry-form"
                       id="project-enquiry-form"
-                      action="#"
-                      method="post">
+                      action="https://portal.chmaintenancesystems.co.uk/api/v1/public/contact-enquiry"
+                      method="post"
+                      novalidate>
+
+                    <div class="chms-contact-honeypot" aria-hidden="true">
+                        <label for="contact-website">Website</label>
+                        <input id="contact-website" name="website" type="text" tabindex="-1" autocomplete="off">
+                    </div>
 
 
                     <!-- Name / Company -->
@@ -1004,8 +1010,10 @@ NAVIGATION
 
 
                         <p>
-                            Fields marked * are required.
+                            Fields marked * are required. Enquiries are delivered securely to contact@chmaintenancesystems.co.uk.
                         </p>
+
+                        <p id="contact-form-status" class="chms-contact-status" role="status" aria-live="polite"></p>
 
                     </div>
 
@@ -1279,6 +1287,8 @@ NAVIGATION
     </div>
 
 </footer>
+
+<script src="js/contact.js" defer></script>
 
 </body>
 
