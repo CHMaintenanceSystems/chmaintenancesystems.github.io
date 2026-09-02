@@ -1,0 +1,974 @@
+/* =====================================================
+   CHMS PRODUCT / WEBSITE COMMERCIAL UPDATE
+   Loaded after css/style.css
+===================================================== */
+
+:root {
+    --chms-navy: #0d1b2a;
+    --chms-navy-2: #10283d;
+    --chms-panel: #123149;
+    --chms-border: rgba(140, 183, 216, 0.22);
+    --chms-blue: #1e88e5;
+    --chms-blue-soft: #66b5f4;
+    --chms-silver: #aab0b7;
+    --chms-white: #f7f7f7;
+    --chms-text: #d9e6ef;
+    --chms-muted: #91a9bb;
+}
+
+/* =====================================================
+   SHARED PRODUCT TYPOGRAPHY
+===================================================== */
+
+.chms-kicker {
+    display: inline-block;
+    margin-bottom: 18px;
+    color: var(--chms-blue-soft);
+    font-size: 0.73rem;
+    font-weight: 800;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+}
+
+.chms-lead {
+    font-size: 1.08rem;
+    line-height: 1.85;
+}
+
+.chms-section-heading {
+    max-width: 820px;
+    margin-bottom: 52px;
+}
+
+.chms-section-heading h2,
+.chms-platform-overview h2,
+.chms-industrial h2,
+.chms-digital-extra h2,
+.chms-product-final h2,
+.chms-home-product h2 {
+    margin: 0;
+    font-size: clamp(2rem, 4vw, 3.45rem);
+    line-height: 1.08;
+    letter-spacing: -0.045em;
+}
+
+.chms-section-heading p,
+.chms-platform-overview p,
+.chms-industrial p,
+.chms-digital-extra p,
+.chms-product-final p,
+.chms-home-product p {
+    line-height: 1.8;
+}
+
+/* =====================================================
+   HOME PAGE — PRODUCT FEATURE
+===================================================== */
+
+.chms-home-product {
+    overflow: hidden;
+}
+
+.chms-home-product-grid {
+    display: grid;
+    grid-template-columns: minmax(280px, 0.8fr) minmax(0, 1.35fr);
+    gap: 72px;
+    align-items: center;
+}
+
+.chms-home-product-visual {
+    min-height: 470px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 48px;
+    border: 1px solid var(--chms-border);
+    border-radius: 18px;
+    background:
+        radial-gradient(circle at 50% 18%, rgba(30, 136, 229, 0.22), transparent 42%),
+        linear-gradient(145deg, #0b1b29, #102c45);
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.24);
+}
+
+.chms-app-mark-wrap {
+    width: min(250px, 70%);
+    aspect-ratio: 1;
+    padding: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.13);
+    border-radius: 28px;
+    background: rgba(255, 255, 255, 0.035);
+}
+
+.chms-app-mark {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 22px;
+}
+
+.chms-home-product-status {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.chms-home-product-status span,
+.chms-home-product-status small {
+    display: block;
+}
+
+.chms-home-product-status span {
+    color: var(--chms-blue-soft);
+    font-size: 0.7rem;
+    font-weight: 800;
+    letter-spacing: 0.15em;
+}
+
+.chms-home-product-status strong {
+    display: block;
+    margin: 8px 0 6px;
+    color: var(--chms-white);
+    font-size: 1.15rem;
+}
+
+.chms-home-product-status small {
+    color: var(--chms-muted);
+    line-height: 1.5;
+}
+
+.chms-home-product-content {
+    color: var(--chms-text);
+}
+
+.chms-home-product-content h2 {
+    color: var(--chms-white);
+    max-width: 760px;
+}
+
+.chms-home-product-content > p {
+    max-width: 760px;
+    color: var(--chms-text);
+}
+
+.chms-home-product-points {
+    margin: 40px 0;
+    display: grid;
+    gap: 14px;
+}
+
+.chms-home-product-points > div {
+    display: grid;
+    grid-template-columns: 42px 160px 1fr;
+    gap: 16px;
+    align-items: start;
+    padding: 20px 0;
+    border-top: 1px solid var(--chms-border);
+}
+
+.chms-home-product-points > div:last-child {
+    border-bottom: 1px solid var(--chms-border);
+}
+
+.chms-home-product-points span {
+    color: var(--chms-blue-soft);
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+}
+
+.chms-home-product-points strong {
+    color: var(--chms-white);
+}
+
+.chms-home-product-points p {
+    margin: 0;
+    color: var(--chms-muted);
+    font-size: 0.93rem;
+}
+
+.chms-home-product-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+/* =====================================================
+   PRODUCT HERO
+===================================================== */
+
+.chms-product-hero {
+    min-height: 88vh;
+    display: flex;
+    align-items: center;
+    padding: 150px 0 90px;
+    color: var(--chms-white);
+    background:
+        linear-gradient(90deg, rgba(4, 15, 25, 0.97), rgba(8, 27, 43, 0.9)),
+        radial-gradient(circle at 80% 25%, rgba(30, 136, 229, 0.22), transparent 36%),
+        var(--chms-navy);
+}
+
+.chms-product-hero-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.18fr) minmax(360px, 0.82fr);
+    gap: 72px;
+    align-items: center;
+}
+
+.chms-product-hero-copy h1 {
+    max-width: 820px;
+    margin: 0;
+    font-size: clamp(3rem, 6.4vw, 6.2rem);
+    line-height: 0.99;
+    letter-spacing: -0.055em;
+}
+
+.chms-product-hero-copy > p {
+    max-width: 760px;
+    margin: 28px 0 0;
+    color: var(--chms-text);
+    font-size: clamp(1.02rem, 1.5vw, 1.18rem);
+    line-height: 1.85;
+}
+
+.chms-product-hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 36px;
+}
+
+.chms-product-hero-note {
+    margin-top: 24px;
+    color: var(--chms-muted);
+    font-size: 0.86rem;
+}
+
+.chms-product-identity {
+    position: relative;
+    padding: 38px;
+    border: 1px solid var(--chms-border);
+    border-radius: 20px;
+    background: linear-gradient(150deg, rgba(17, 47, 70, 0.92), rgba(8, 28, 44, 0.97));
+    box-shadow: 0 35px 100px rgba(0, 0, 0, 0.32);
+}
+
+.chms-product-icon-shell {
+    width: 190px;
+    margin: 0 auto 26px;
+    padding: 10px;
+    border-radius: 28px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    background: rgba(255, 255, 255, 0.035);
+}
+
+.chms-product-icon {
+    width: 100%;
+    display: block;
+    border-radius: 22px;
+}
+
+.chms-product-identity-copy {
+    text-align: center;
+}
+
+.chms-product-identity-copy span,
+.chms-product-identity-copy strong,
+.chms-product-identity-copy small {
+    display: block;
+}
+
+.chms-product-identity-copy span {
+    color: var(--chms-blue-soft);
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.2em;
+}
+
+.chms-product-identity-copy strong {
+    margin-top: 8px;
+    font-size: 1.5rem;
+}
+
+.chms-product-identity-copy small {
+    margin-top: 8px;
+    color: var(--chms-muted);
+    line-height: 1.5;
+}
+
+.chms-product-identity-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.chms-product-identity-grid > div {
+    min-height: 94px;
+    padding: 18px;
+    border: 1px solid var(--chms-border);
+    border-radius: 10px;
+    background: rgba(4, 19, 31, 0.45);
+}
+
+.chms-product-identity-grid span,
+.chms-product-identity-grid strong {
+    display: block;
+}
+
+.chms-product-identity-grid span {
+    color: var(--chms-blue-soft);
+    font-size: 0.66rem;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.chms-product-identity-grid strong {
+    margin-top: 8px;
+    font-size: 0.92rem;
+}
+
+/* =====================================================
+   PLATFORM OVERVIEW
+===================================================== */
+
+.chms-platform-overview-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+    gap: 84px;
+    align-items: start;
+}
+
+.chms-platform-overview h2 {
+    color: var(--chms-white);
+}
+
+.chms-platform-overview-copy {
+    color: var(--chms-text);
+}
+
+.chms-platform-overview-copy p {
+    margin-top: 0;
+}
+
+.chms-platform-statement {
+    margin-top: 32px;
+    padding: 26px 28px;
+    border-left: 3px solid var(--chms-blue);
+    background: rgba(30, 136, 229, 0.08);
+}
+
+.chms-platform-statement span,
+.chms-platform-statement strong {
+    display: block;
+}
+
+.chms-platform-statement span {
+    margin-bottom: 9px;
+    color: var(--chms-blue-soft);
+    font-size: 0.7rem;
+    font-weight: 800;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+}
+
+.chms-platform-statement strong {
+    color: var(--chms-white);
+    line-height: 1.55;
+}
+
+/* =====================================================
+   HOW CHMS WORKS
+===================================================== */
+
+.chms-how-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.chms-how-grid article,
+.chms-implementation-grid article {
+    position: relative;
+    padding: 30px;
+    border: 1px solid rgba(11, 43, 65, 0.15);
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0 20px 50px rgba(12, 31, 45, 0.06);
+}
+
+.chms-how-grid article > span,
+.chms-implementation-grid article > span {
+    display: block;
+    color: var(--chms-blue);
+    font-size: 0.72rem;
+    font-weight: 800;
+    letter-spacing: 0.13em;
+}
+
+.chms-how-grid h3,
+.chms-implementation-grid h3 {
+    margin: 28px 0 14px;
+    color: #13293a;
+}
+
+.chms-how-grid p,
+.chms-implementation-grid p {
+    color: #526a7b;
+    line-height: 1.75;
+}
+
+.chms-how-grid strong {
+    display: block;
+    margin-top: 24px;
+    padding-top: 17px;
+    border-top: 1px solid rgba(12, 50, 76, 0.12);
+    color: #153c59;
+    font-size: 0.76rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+/* =====================================================
+   CAPABILITIES
+===================================================== */
+
+.chms-section-heading-light h2,
+.chms-section-heading-light p {
+    color: var(--chms-white);
+}
+
+.chms-section-heading-light p {
+    color: var(--chms-muted);
+}
+
+.chms-capabilities-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+}
+
+.chms-capabilities-grid article {
+    min-height: 260px;
+    padding: 28px;
+    border: 1px solid var(--chms-border);
+    border-radius: 12px;
+    background: linear-gradient(145deg, rgba(18, 49, 73, 0.7), rgba(8, 27, 43, 0.78));
+}
+
+.chms-capabilities-grid article > span {
+    color: var(--chms-blue-soft);
+    font-size: 0.7rem;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+}
+
+.chms-capabilities-grid h3 {
+    margin: 32px 0 14px;
+    color: var(--chms-white);
+    font-size: 1.04rem;
+    line-height: 1.4;
+}
+
+.chms-capabilities-grid p {
+    margin: 0;
+    color: var(--chms-muted);
+    line-height: 1.72;
+    font-size: 0.91rem;
+}
+
+/* =====================================================
+   MANAGER + ENGINEER EXPERIENCE
+===================================================== */
+
+.chms-experience-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+}
+
+.chms-experience-card {
+    padding: 34px;
+    border-radius: 16px;
+    border: 1px solid rgba(13, 49, 74, 0.15);
+    background: #fff;
+    box-shadow: 0 24px 70px rgba(12, 31, 45, 0.08);
+}
+
+.chms-experience-card-header span,
+.chms-experience-card-header strong {
+    display: block;
+}
+
+.chms-experience-card-header span {
+    color: var(--chms-blue);
+    font-size: 0.72rem;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.chms-experience-card-header strong {
+    margin-top: 8px;
+    color: #102c42;
+    font-size: 1.35rem;
+}
+
+.chms-experience-card ul {
+    margin: 26px 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.chms-experience-card li {
+    position: relative;
+    padding: 11px 0 11px 20px;
+    border-bottom: 1px solid rgba(12, 48, 73, 0.1);
+    color: #4d6677;
+}
+
+.chms-experience-card li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 18px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--chms-blue);
+}
+
+/* Browser visual */
+
+.chms-browser-preview {
+    overflow: hidden;
+    margin-top: 28px;
+    border: 1px solid rgba(11, 43, 65, 0.14);
+    border-radius: 10px;
+    background: #081d2d;
+}
+
+.chms-browser-bar {
+    height: 38px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 0 13px;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+    color: #98b0c0;
+    font-size: 0.58rem;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+}
+
+.chms-browser-bar i {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #527289;
+}
+
+.chms-browser-bar span {
+    margin-left: auto;
+}
+
+.chms-browser-body {
+    display: grid;
+    grid-template-columns: 110px 1fr;
+    min-height: 270px;
+}
+
+.chms-browser-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    padding: 24px 16px;
+    border-right: 1px solid rgba(255,255,255,0.07);
+    color: #7895a8;
+    font-size: 0.62rem;
+}
+
+.chms-browser-nav b {
+    color: var(--chms-blue-soft);
+}
+
+.chms-browser-content {
+    padding: 24px;
+}
+
+.chms-browser-kpis {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 8px;
+}
+
+.chms-browser-kpis span {
+    padding: 13px;
+    border: 1px solid rgba(255,255,255,0.07);
+    background: #102e43;
+}
+
+.chms-browser-kpis small,
+.chms-browser-kpis strong {
+    display: block;
+}
+
+.chms-browser-kpis small {
+    color: #7292a7;
+    font-size: 0.48rem;
+    font-weight: 800;
+}
+
+.chms-browser-kpis strong {
+    margin-top: 7px;
+    color: #eef7fb;
+    font-size: 0.65rem;
+}
+
+.chms-browser-lines {
+    height: 78px;
+    margin-top: 14px;
+    border: 1px solid rgba(255,255,255,0.06);
+    background:
+        linear-gradient(90deg, transparent 0 18%, rgba(102,181,244,0.2) 18% 19%, transparent 19% 48%, rgba(102,181,244,0.12) 48% 49%, transparent 49%),
+        #0d283c;
+}
+
+.chms-browser-lines.short {
+    height: 48px;
+    margin-top: 10px;
+}
+
+/* Phone visual */
+
+.chms-phone-preview {
+    min-height: 336px;
+    display: grid;
+    place-items: center;
+    margin-top: 28px;
+    padding: 18px;
+    border-radius: 10px;
+    background: linear-gradient(145deg, #0a2234, #0f3853);
+}
+
+.chms-phone-shell {
+    width: 180px;
+    min-height: 305px;
+    padding: 14px;
+    border: 5px solid #07141d;
+    border-radius: 26px;
+    background: #0c2232;
+    box-shadow: 0 20px 45px rgba(0,0,0,0.32);
+}
+
+.chms-phone-top {
+    width: 52px;
+    height: 5px;
+    margin: 0 auto 18px;
+    border-radius: 5px;
+    background: #34556b;
+}
+
+.chms-phone-brand {
+    display: flex;
+    gap: 9px;
+    align-items: center;
+}
+
+.chms-phone-brand img {
+    width: 31px;
+    height: 31px;
+    border-radius: 8px;
+}
+
+.chms-phone-brand strong,
+.chms-phone-brand span {
+    display: block;
+}
+
+.chms-phone-brand strong {
+    color: #fff;
+    font-size: 0.78rem;
+}
+
+.chms-phone-brand span {
+    color: var(--chms-blue-soft);
+    font-size: 0.45rem;
+    letter-spacing: 0.12em;
+}
+
+.chms-phone-task {
+    margin-top: 28px;
+    padding: 14px;
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 9px;
+    background: #102f45;
+}
+
+.chms-phone-task span,
+.chms-phone-task strong,
+.chms-phone-task small {
+    display: block;
+}
+
+.chms-phone-task span {
+    color: #6cc0ff;
+    font-size: 0.48rem;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+}
+
+.chms-phone-task strong {
+    margin-top: 8px;
+    color: #fff;
+    font-size: 0.72rem;
+}
+
+.chms-phone-task small {
+    margin-top: 6px;
+    color: #86a3b6;
+    font-size: 0.5rem;
+}
+
+.chms-phone-actions {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 5px;
+    margin-top: 16px;
+}
+
+.chms-phone-actions span {
+    padding: 9px 3px;
+    border: 1px solid rgba(255,255,255,0.07);
+    border-radius: 5px;
+    color: #9cb6c7;
+    text-align: center;
+    font-size: 0.42rem;
+    font-weight: 800;
+}
+
+/* =====================================================
+   INDUSTRIAL SCHEDULING
+===================================================== */
+
+.chms-industrial-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(320px, 0.85fr);
+    gap: 84px;
+    align-items: center;
+}
+
+.chms-industrial h2 {
+    color: var(--chms-white);
+}
+
+.chms-industrial p {
+    color: var(--chms-muted);
+    max-width: 760px;
+}
+
+.chms-industrial-list {
+    border-top: 1px solid var(--chms-border);
+}
+
+.chms-industrial-list > div {
+    display: grid;
+    grid-template-columns: 145px 1fr;
+    gap: 24px;
+    align-items: center;
+    padding: 22px 0;
+    border-bottom: 1px solid var(--chms-border);
+}
+
+.chms-industrial-list span {
+    color: var(--chms-blue-soft);
+    font-size: 0.7rem;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+}
+
+.chms-industrial-list strong {
+    color: var(--chms-white);
+    font-size: 0.95rem;
+}
+
+/* =====================================================
+   IMPLEMENTATION
+===================================================== */
+
+.chms-implementation-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.chms-implementation-statement {
+    display: grid;
+    grid-template-columns: 190px 1fr;
+    gap: 30px;
+    margin-top: 32px;
+    padding: 28px 30px;
+    border-left: 3px solid var(--chms-blue);
+    background: #eef6fb;
+}
+
+.chms-implementation-statement span {
+    color: var(--chms-blue);
+    font-size: 0.7rem;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.chms-implementation-statement strong {
+    color: #163a54;
+    line-height: 1.55;
+}
+
+/* =====================================================
+   DIGITAL EXTRA
+===================================================== */
+
+.chms-digital-extra-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+    gap: 84px;
+}
+
+.chms-digital-extra h2 {
+    color: var(--chms-white);
+}
+
+.chms-digital-extra p {
+    margin-top: 0;
+    color: var(--chms-muted);
+}
+
+/* =====================================================
+   FINAL CTA
+===================================================== */
+
+.chms-product-final-inner {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 70px;
+    align-items: end;
+}
+
+.chms-product-final-inner > div:first-child {
+    max-width: 870px;
+}
+
+.chms-product-final-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    min-width: 260px;
+}
+
+.chms-product-final-actions span {
+    color: #637887;
+    font-size: 0.82rem;
+}
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 1100px) {
+    .chms-product-hero-grid,
+    .chms-home-product-grid,
+    .chms-platform-overview-grid,
+    .chms-industrial-grid,
+    .chms-digital-extra-grid {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .chms-product-identity {
+        max-width: 620px;
+    }
+
+    .chms-how-grid,
+    .chms-capabilities-grid,
+    .chms-implementation-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .chms-product-final-inner {
+        grid-template-columns: 1fr;
+        gap: 34px;
+    }
+}
+
+@media (max-width: 760px) {
+    .chms-product-hero {
+        min-height: auto;
+        padding-top: 125px;
+    }
+
+    .chms-product-hero-copy h1 {
+        font-size: clamp(2.65rem, 13vw, 4.2rem);
+    }
+
+    .chms-product-identity,
+    .chms-experience-card,
+    .chms-home-product-visual {
+        padding: 24px;
+    }
+
+    .chms-product-identity-grid,
+    .chms-how-grid,
+    .chms-capabilities-grid,
+    .chms-experience-grid,
+    .chms-implementation-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .chms-home-product-points > div {
+        grid-template-columns: 36px 1fr;
+    }
+
+    .chms-home-product-points p {
+        grid-column: 2;
+    }
+
+    .chms-industrial-list > div,
+    .chms-implementation-statement {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+
+    .chms-browser-body {
+        grid-template-columns: 78px 1fr;
+    }
+
+    .chms-browser-nav {
+        padding: 20px 10px;
+        font-size: 0.52rem;
+    }
+
+    .chms-browser-kpis {
+        grid-template-columns: 1fr;
+    }
+
+    .chms-browser-body {
+        min-height: 320px;
+    }
+
+    .chms-product-hero-actions,
+    .chms-home-product-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .chms-product-hero-actions .btn,
+    .chms-product-hero-actions .btn-outline,
+    .chms-home-product-actions .btn,
+    .chms-home-product-actions .btn-outline {
+        text-align: center;
+    }
+}
